@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memorial marks</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/filled.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+  </head>
+  <body>
+
+    <!-- wallpaper -->
+    <div class="wallpaper">
+      <div class="walpapper_wrapper container">
+        <div class="wallpaper_logo">
+          <img src="./assets/logo.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- main edit block -->
+    <div class="edit_wrapper container">
+      <div class="filled_profile_sidebar">
+        <div class="edit_sidebar">
+          <div class="user_profile">
+            <div class="user_profile_avatar">
+              <img
+                class="user_avatar_img"
+                src="./assets/icons/default-profile.svg"
+                alt=""
+              />
+            </div>
+            <div class="user_profile_username">
+              <p>John Smith</p>
+              <span>Mechanical Engineer</span>
+            </div>
+            <div class="user_date_birth">
+              <p>18.05.1982 - 27.04.2071</p>
+            </div>
+            <div class="obituary_btn_block">
+              <button>Obituary</button>
+              <div><img src="/assets/icons/share.svg" alt="" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="filled_menu tabs_list">
+          <div class="filled_menu_item menu_item active_menu" data-id="menu1">
+            <img src="./assets/icons/active-menu.svg" alt="" />
+            <p>Information about the person</p>
+          </div>
+          <div class="filled_menu_item menu_item" data-id="menu2">
+            <img src="./assets/icons/active-menu.svg" alt="" />
+
+            <p>Photos gallery</p>
+          </div>
+          <div class="filled_menu_item menu_item" data-id="menu3">
+            <img src="./assets/icons/active-menu.svg" alt="" />
+
+            <p>Videos gallery</p>
+          </div>
+          <div class="filled_menu_item menu_item" data-id="menu4">
+            <img src="./assets/icons/active-menu.svg" alt="" />
+
+            <p>Links to social networks</p>
+          </div>
+        </div>
+      </div>
+      <div class="edit_block_content">
+        <!-- menu 1 -->
+        <div class="menu_item_content active_menu" id="menu1">
+          <div class="filled_content_page">
+            <div class="content_page_title">
+              <h2>Information about the person</h2>
+            </div>
+            <div class="filled_secondary_title">
+              <h3>Obituary</h3>
+            </div>
+            <div class="main_datas">
+              <div class="data_block">
+                <h4>Place of Birth</h4>
+                <p class="italic_data">3080 PARK AVE BRONX NY 10451-4069 USA</p>
+              </div>
+              <div class="data_block">
+                <h4>Marital status</h4>
+                <p class="italic_data">Married and 2 childrens</p>
+              </div>
+              <div class="data_block">
+                <h4>Place of residence</h4>
+                <p class="italic_data">
+                  515 S FIGUEROA ST LOS ANGELES CA 90071-3309 USA
+                </p>
+              </div>
+            </div>
+            <div class="content_line"></div>
+
+            <div class="filled_secondary_title">
+              <h3>Education and career</h3>
+            </div>
+            <div class="data_block structured_data_block">
+              <h4>Education</h4>
+              <p class="italic_data">
+                <span>Schools:</span> Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. 
+              </p>
+              <p class="italic_data">
+                <span>Universities:</span> Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. 
+              </p>
+              <p class="italic_data">
+                <span>Degrees obtained:</span> Lorem Ipsum is simply dummy text
+                of the printing and typesetting industry. 
+              </p>
+            </div>
+            <div class="data_block structured_data_block">
+              <h4>Professional career</h4>
+              <p class="italic_data">
+                <span>Positions:</span> Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. 
+              </p>
+              <p class="italic_data">
+                <span>Сompanies:</span> Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. 
+              </p>
+              <p class="italic_data">
+                <span>Achievements at work:</span> Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. 
+              </p>
+            </div>
+            <div class="data_block structured_data_block">
+              <h4>Military service</h4>
+              <p class="italic_data">
+                <span>Applicable:</span> Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. 
+              </p>
+              <p class="italic_data">
+                <span>Ranks:</span> Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. 
+              </p>
+              <p class="italic_data">
+                <span>Units:</span> Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. 
+              </p>
+              <p class="italic_data">
+                <span>Medals:</span> Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. 
+              </p>
+            </div>
+            <div class="content_line"></div>
+
+            <div class="filled_secondary_title">
+              <h3>Personal achievements</h3>
+            </div>
+            <div class="data_block">
+              <h4>Personal achievements and awards</h4>
+              <ul>
+                <li>
+                  <span>Lorem Ipsum is simply </span> dummy text of the printing
+                  and typesetting industry.
+                </li>
+                <li>
+                  <span> Lorem Ipsum has been</span> the industry's standard
+                  dummy text ever since the 1500s,
+                </li>
+                <li>
+                  <span>When an unknown </span> printer took a galley of type
+                  and scrambled it to make a type specimen book.
+                </li>
+                <li>
+                  <span> It has survived not only five centuries,</span> but
+                  also the leap into electronic typesetting,
+                </li>
+                <li>
+                  <span>Remaining essentially unchanged. </span> It was
+                  popularised in the 1960s with the release of Letraset
+                </li>
+              </ul>
+            </div>
+            <div class="data_block structured_data_block">
+              <h4>Participation in public life</h4>
+              <p class="italic_data">
+                <span>Volunteering:</span> Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. 
+              </p>
+              <p class="italic_data">
+                <span>Membership in organizations:</span> Lorem Ipsum is simply
+                dummy text of the. 
+              </p>
+            </div>
+
+            <div class="content_line"></div>
+
+            <div class="filled_secondary_title">
+              <h3>Interests and hobbies</h3>
+            </div>
+            <div class="data_block">
+              <h4>Favorite activities and hobbies</h4>
+              <ul>
+                <li>
+                  <span>Lorem Ipsum is simply </span> dummy text of the printing
+                  and typesetting industry.
+                </li>
+                <li>
+                  <span> Lorem Ipsum has been</span> the industry's standard
+                  dummy text ever since the 1500s,
+                </li>
+                <li>
+                  <span>When an unknown </span> printer took a galley of type
+                  and scrambled it to make a type specimen book.
+                </li>
+                <li>
+                  <span> It has survived not only five centuries,</span> but
+                  also the leap into electronic typesetting,
+                </li>
+                <li>
+                  <span>Remaining essentially unchanged. </span> It was
+                  popularised in the 1960s with the release of Letraset
+                </li>
+              </ul>
+            </div>
+            <div class="data_block">
+              <h4>Hobbies</h4>
+              <ul>
+                <li>
+                  <span>Lorem Ipsum is simply </span> dummy text of the printing
+                  and typesetting industry.
+                </li>
+                <li>
+                  <span> Lorem Ipsum has been</span> the industry's standard
+                  dummy text ever since the 1500s,
+                </li>
+                <li>
+                  <span>When an unknown </span> printer took a galley of type
+                  and scrambled it to make a type specimen book.
+                </li>
+              </ul>
+            </div>
+            <div class="data_block structured_data_block">
+              <h4>Travel</h4>
+              <p class="italic_data">
+                <span>Favorite places:</span> Lorem Ipsum is simply dummy text
+                of the printing and typesetting industry. 
+              </p>
+              <p class="italic_data">
+                <span>Important trips:</span> Lorem Ipsum is simply dummy text
+                of the. 
+              </p>
+            </div>
+
+            <div class="content_line"></div>
+
+            <div class="filled_secondary_title">
+              <h3>Personal qualities and character traits</h3>
+            </div>
+
+            <div class="data_block simple_text_block">
+              <h4>Description of personality and character</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+            <div class="data_block simple_text_block">
+              <h4>Important qualities that made this person stand out</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+            <div class="data_block simple_text_block">
+              <h4>Recollections of how he impacted the lives of others</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <div class="load_more_btn">
+                <button>Load more</button>
+              </div>
+              <p>
+                The standard chunk of Lorem Ipsum used since the 1500s is
+                reproduced below for those interested. Sections 1.10.32 and
+                1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
+                reproduced in their exact original form, accompanied by English
+                versions from the 1914 translation by H. Rackham.
+              </p>
+            </div>
+
+            <div class="content_line"></div>
+
+            <div class="filled_secondary_title">
+              <h3>Stories and jokes</h3>
+            </div>
+            <div class="data_block simple_text_block">
+              <h4>Personal stories and anecdotes</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <br />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <br />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <div class="load_more_btn">
+                <button>Load more</button>
+              </div>
+            </div>
+
+            <div class="data_block simple_text_block">
+              <h4>
+                Important moments in life that were remembered by relatives and
+                friends
+              </h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+            <div class="data_block simple_text_block">
+              <h4>Statements that characterize his/her worldview</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <br />
+              <ul>
+                <li>
+                  <span>Lorem Ipsum is simply </span> dummy text of the printing
+                  and typesetting industry.
+                </li>
+                <li>
+                  <span> Lorem Ipsum has been</span> the industry's standard
+                  dummy text ever since the 1500s,
+                </li>
+                <li>
+                  <span>When an unknown </span> printer took a galley of type
+                  and scrambled it to make a type specimen book.
+                </li>
+                <li>
+                  <span> It has survived not only five centuries,</span> but
+                  also the leap into electronic typesetting,
+                </li>
+                <li>
+                  <span>Remaining essentially unchanged. </span> It was
+                  popularised in the 1960s with the release of Letraset
+                </li>
+              </ul>
+            </div>
+
+            <div class="content_line"></div>
+
+            <div class="filled_secondary_title">
+              <h3>Other</h3>
+            </div>
+            <div class="data_block simple_text_block">
+              <h4>
+                Any other important aspects of life and personality that will
+                help create a complete picture of the person
+              </h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- menu 2 -->
+        <div class="menu_item_content" id="menu2">
+          <div class="filled_content_page">
+            <div class="content_page_title">
+              <h2>Photo gallery</h2>
+            </div>
+            <div class="gallery_container">
+              <div class="gallery_item" data-modal-target="#photos_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/foto.png"
+                  alt=""
+                />
+                <div class="photo_item_zoom">
+                  <img src="./assets/icons/zoom.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#photos_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/foto.png"
+                  alt=""
+                />
+                <div class="photo_item_zoom">
+                  <img src="./assets/icons/zoom.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#photos_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/foto.png"
+                  alt=""
+                />
+                <div class="photo_item_zoom">
+                  <img src="./assets/icons/zoom.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#photos_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/foto.png"
+                  alt=""
+                />
+                <div class="photo_item_zoom">
+                  <img src="./assets/icons/zoom.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#photos_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/foto.png"
+                  alt=""
+                />
+                <div class="photo_item_zoom">
+                  <img src="./assets/icons/zoom.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#photos_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/foto.png"
+                  alt=""
+                />
+                <div class="photo_item_zoom">
+                  <img src="./assets/icons/zoom.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#photos_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/foto.png"
+                  alt=""
+                />
+                <div class="photo_item_zoom">
+                  <img src="./assets/icons/zoom.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#photos_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/foto.png"
+                  alt=""
+                />
+                <div class="photo_item_zoom">
+                  <img src="./assets/icons/zoom.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#photos_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/foto.png"
+                  alt=""
+                />
+                <div class="photo_item_zoom">
+                  <img src="./assets/icons/zoom.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="load_more_btn">
+              <button>Load more</button>
+            </div>
+          </div>
+        </div>
+        <!-- menu 3 -->
+        <div class="menu_item_content" id="menu3">
+          <div class="filled_content_page">
+            <div class="content_page_title">
+              <h2>Videos gallery</h2>
+            </div>
+            <div class="gallery_container">
+              <div class="gallery_item" data-modal-target="#video_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/video.png"
+                  alt=""
+                />
+                <div class="play_icon">
+                  <img src="./assets/icons/play.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#video_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/video.png"
+                  alt=""
+                />
+                <div class="play_icon">
+                  <img src="./assets/icons/play.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#video_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/video.png"
+                  alt=""
+                />
+                <div class="play_icon">
+                  <img src="./assets/icons/play.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#video_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/video.png"
+                  alt=""
+                />
+                <div class="play_icon">
+                  <img src="./assets/icons/play.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#video_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/video.png"
+                  alt=""
+                />
+                <div class="play_icon">
+                  <img src="./assets/icons/play.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#video_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/video.png"
+                  alt=""
+                />
+                <div class="play_icon">
+                  <img src="./assets/icons/play.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#video_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/video.png"
+                  alt=""
+                />
+                <div class="play_icon">
+                  <img src="./assets/icons/play.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#video_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/video.png"
+                  alt=""
+                />
+                <div class="play_icon">
+                  <img src="./assets/icons/play.svg" alt="" />
+                </div>
+              </div>
+              <div class="gallery_item" data-modal-target="#video_modal">
+                <img
+                  class="photo_gallery_image"
+                  src="./assets/images/video.png"
+                  alt=""
+                />
+                <div class="play_icon">
+                  <img src="./assets/icons/play.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="load_more_btn">
+              <button>Load more</button>
+            </div>
+          </div>
+        </div>
+        <!-- menu 3 -->
+        <div class="menu_item_content" id="menu4">
+          <div class="filled_content_page">
+            <div class="content_page_title">
+              <h2>Links to social networks</h2>
+            </div>
+            <div class="social_networks_list">
+              <a href="#">
+                <div>
+                  <img src="./assets/icons/instagram.svg" alt="" />
+                  <p>instagram</p>
+                </div>
+              </a>
+              <a href="#">
+                <div>
+                  <img src="./assets/icons/facebook.svg" alt="" />
+                  <p>Facebook</p>
+                </div>
+              </a>
+              <a href="#">
+                <div>
+                  <img src="./assets/icons/lin.svg" alt="" />
+                  <p>LinkedIn</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- video upload modal -->
+    <div class="modal_wrapper" id="video_modal">
+      <div class="modal_container">
+        <img
+          src="./assets/images/vide-player.png"
+          class="video_player"
+          alt=""
+        />
+        <div class="exit_modal_btn">
+          <img src="./assets/icons/exit.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- photo upload modal -->
+    <div class="modal_wrapper" id="photos_modal">
+      <div class="modal_container carousel_container">
+        <div class="carousel">
+          <div class="carousel_main_image">
+            <img
+              id="mainImage"
+              src="./assets/images/carousel.png"
+              alt="Main Image"
+            />
+          </div>
+          <div class="carousel_controls">
+            <button id="prevButton">
+              <img src="./assets/icons/left-arrow.svg" alt="" />
+            </button>
+            <button id="nextButton">
+              <img src="./assets/icons/right-arrow.svg" alt="" />
+            </button>
+          </div>
+          <div class="carousel_thumbnails">
+            <img
+              class="thumbnail"
+              src="./assets/images/foto.png"
+              alt="Thumbnail 1"
+              data-index="0"
+            />
+            <img
+              class="thumbnail"
+              src="./assets/images/carousel.png"
+              alt="Thumbnail 2"
+              data-index="1"
+            />
+            <img
+              class="thumbnail"
+              src="./assets/images/carousel-2.png"
+              alt="Thumbnail 3"
+              data-index="2"
+            />
+          </div>
+        </div>
+
+        <div class="exit_modal_btn">
+          <img src="./assets/icons/exit.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer_wrapper container">
+        <div class="footer_logo">
+          <img src="./assets/logo.svg" alt="" />
+        </div>
+        <div class="footer_menu">
+          <div>
+            <a href="#"><p>Privacy Policy</p></a>
+            <a href="#"><p>Shipping Policy</p></a>
+          </div>
+          <div>
+            <a href="#"><p>User agreement</p></a>
+            <a href="#"><p>Contact information</p></a>
+          </div>
+          <div>
+            <a href="#"><p>Return and exchange policy</p></a>
+            <a href="#"><p>Information about goods and services</p></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/modals.js"></script>
+    <script src="./scripts/carousel.js"></script>
+    
+  </body>
+</html>

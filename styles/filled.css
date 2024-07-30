@@ -1,0 +1,336 @@
+.user_profile_username span {
+  color: rgb(135, 135, 135);
+  font-family: Montserrat;
+  font-size: 16.67px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.user_date_birth p {
+  color: rgb(104, 104, 104);
+  font-family: Montserrat;
+  font-size: 17.5px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.obituary_btn_block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.obituary_btn_block button {
+  width: 203.33px;
+  height: 42.5px;
+  border-radius: 8.33px;
+  border: none;
+  background: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 18.33px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.obituary_btn_block div {
+  box-sizing: border-box;
+  box-shadow: 0px 0px 9.17px 0px rgba(0, 0, 0, 0.2);
+  background: rgb(255, 255, 255);
+  width: 42.5px;
+  height: 42.5px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filled_profile_sidebar {
+  max-width: 400px;
+  width: 100%;
+}
+.filled_profile_sidebar .user_profile {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.filled_menu {
+  margin-top: 23px;
+}
+.filled_menu_item {
+  padding: 17px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  gap: 17px;
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+.filled_menu .filled_menu_item:nth-child(4) {
+  border-bottom: none;
+}
+
+.filled_menu_item p {
+  color: rgb(37, 37, 37);
+  font-family: Montserrat;
+  font-size: 18.33px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  transition: all 0.4s ease;
+}
+.filled_menu_item:hover p {
+  transition: all 0.4s ease;
+  color: rgb(255, 0, 0);
+}
+.filled_secondary_title h3 {
+  color: rgb(31, 31, 31);
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 37px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 33px;
+}
+
+.main_datas {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.data_block {
+  margin-bottom: 33px;
+}
+
+.data_block h4 {
+  color: rgb(31, 31, 31);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 9px;
+}
+
+.data_block p {
+  color: rgb(104, 104, 104);
+  font-family: Montserrat;
+  font-style: italic;
+  font-size: 17.5px;
+  font-weight: 400;
+  line-height: 26.67px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.content_page_title {
+  margin-bottom: 50px;
+}
+
+.filled_content_page .content_line {
+  width: 90%;
+  margin: 50px auto;
+}
+.main_datas div:last-child {
+  margin-bottom: 0;
+}
+.data_block span {
+  color: rgb(104, 104, 104);
+  font-family: Montserrat;
+  font-size: 17.5px;
+  font-weight: 600;
+  line-height: 26.67px;
+  letter-spacing: 0%;
+  text-align: left;
+  font-style: normal;
+}
+
+.structured_data_block p {
+  margin-bottom: 8px;
+}
+.data_block li {
+  color: rgb(104, 104, 104);
+  font-family: Montserrat;
+  font-size: 17.5px;
+  font-weight: 400;
+  line-height: 26.67px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.data_block ul {
+  padding-left: 30px;
+}
+.simple_text_block p {
+  color: rgb(104, 104, 104);
+  font-family: Montserrat;
+  font-size: 17.5px;
+  font-weight: 400;
+  line-height: 26.67px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+
+
+.gallery_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  padding-bottom: 23px;
+}
+.gallery_item {
+  cursor: pointer;
+  height: 315px;
+  border-radius: 16.67px;
+  overflow: hidden;
+  position: relative;
+}
+.photo_gallery_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo_item_zoom {
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.gallery_item:hover .photo_item_zoom {
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.play_icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social_networks_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social_networks_list div {
+  border-radius: 8.33px;
+  width: 284.17px;
+  height: 58.33px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 12.5px 0px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+}
+.filled_content_page {
+  width: 100%;
+}
+
+.social_networks_list div img {
+  margin: 0 33px;
+}
+.social_networks_list div p {
+  color: rgb(31, 31, 31);
+  font-family: Montserrat;
+  font-size: 18.33px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.filled_menu_item img {
+  visibility: hidden;
+}
+.filled_menu_item.active_menu img {
+  visibility: visible;
+}
+.filled_menu_item.active_menu p {
+  color: rgb(255, 0, 0);
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel_main_image img {
+  width: 805px;
+  height: 510px;
+  object-fit: cover;
+  border-radius: 16.67px;
+}
+
+.carousel_controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin: 10px 0;
+}
+
+.carousel_controls button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.carousel_thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.carousel_thumbnails img {
+  width: 264.17px;
+  height: 107.5px;
+  border-radius: 12.5px;
+  object-fit: cover;
+  margin: 0 6px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.carousel_thumbnails img:hover,
+.carousel_thumbnails img.active {
+  opacity: 1;
+}
+
+.carousel_controls {
+  position: absolute;
+  width: 100%;
+  padding-left: 45px;
+  padding-right: 45px;
+  top: 40%;
+}
+
+.carousel_container {
+    padding: 30px !important;
+}

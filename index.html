@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memorial marks</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+  </head>
+  <body>
+
+    <!-- nav bar -->
+    <nav>
+      <div class="nav_wrapper container">
+        <div class="nav_left"><h4>Edit Profile</h4></div>
+        <div class="nav_right_profile">
+          <div class="nav_right_user_data">
+            <img src="./assets/icons/default-profile.svg" alt="" />
+            <div class="nav_drop_handler">
+              <p>John Smith</p>
+              <img src="./assets/icons/arrow-down.svg" alt="" />
+            </div>
+            <div class="logout_modal">
+              <img src="./assets/icons/logout.svg" alt="" />
+              <p>Log out</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- wallpaper -->
+    <div class="wallpaper">
+      <div class="walpapper_wrapper container">
+        <div class="wallpaper_logo">
+          <img src="./assets/logo.svg" alt="" />
+        </div>
+        <button class="change_wall_btn">
+          <img src="./assets/icons/camera.svg" alt="" /> Change wallpaper
+        </button>
+      </div>
+    </div>
+
+    <!-- main edit block -->
+    <div class="edit_wrapper container">
+      <div class="edit_sidebar">
+        <div class="user_profile">
+          <div class="user_profile_avatar">
+            <img
+              class="user_avatar_img"
+              src="./assets/icons/default-profile.svg"
+              alt=""
+            />
+            <div class="user_profile_img_update">
+              <img src="./assets/icons/update-img-icon.svg" alt="" />
+            </div>
+          </div>
+          <div class="user_profile_username">
+            <p>John Smith</p>
+          </div>
+        </div>
+        <div class="profile_sidebar tabs_list">
+          <div
+            class="profile_sidebar_item menu_item active_menu"
+            data-id="menu1"
+          >
+            <svg
+              width="18.472168"
+              height="15.833984"
+              viewBox="0 0 18.4722 15.834"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs />
+              <path
+                id="Vector"
+                d="M0.65 15.83C0.48 15.83 0.31 15.76 0.19 15.64C0.06 15.51 0 15.34 0 15.17L0 0.66C0 0.48 0.06 0.31 0.19 0.19C0.31 0.07 0.48 0 0.65 0L17.81 0C17.98 0 18.15 0.07 18.27 0.19C18.4 0.31 18.47 0.48 18.47 0.66L18.47 15.17C18.47 15.34 18.4 15.51 18.27 15.64C18.15 15.76 17.98 15.83 17.81 15.83L0.65 15.83ZM7.16 11.12L5.74 9.7C5.61 9.57 5.45 9.5 5.27 9.5C5.1 9.5 4.93 9.57 4.81 9.7L1.31 13.19L17.37 13.19L12.38 7.2C12.31 7.13 12.24 7.07 12.15 7.02C12.06 6.98 11.97 6.96 11.87 6.96C11.77 6.96 11.68 6.98 11.59 7.02C11.5 7.07 11.42 7.13 11.36 7.2L8.13 11.08C8.07 11.15 8 11.2 7.92 11.24C7.84 11.28 7.75 11.31 7.66 11.31C7.56 11.32 7.47 11.3 7.39 11.27C7.3 11.23 7.22 11.18 7.16 11.12ZM3.95 5.27C3.95 5.53 4 5.79 4.1 6.03C4.2 6.27 4.35 6.49 4.53 6.67C4.72 6.86 4.94 7 5.18 7.1C5.42 7.2 5.67 7.25 5.93 7.25C6.19 7.25 6.45 7.2 6.69 7.1C6.93 7 7.15 6.86 7.33 6.67C7.52 6.49 7.66 6.27 7.76 6.03C7.86 5.79 7.91 5.53 7.91 5.27C7.91 4.75 7.7 4.24 7.33 3.87C6.96 3.5 6.46 3.29 5.93 3.29C5.41 3.29 4.9 3.5 4.53 3.87C4.16 4.25 3.95 4.75 3.95 5.27Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+
+            <p>photo settings</p>
+          </div>
+          <div class="profile_sidebar_item menu_item" data-id="menu2">
+            <svg
+              width="15.833984"
+              height="15.833984"
+              viewBox="0 0 15.834 15.834"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs />
+              <path
+                id="Vector"
+                d="M7.91 0C3.54 0 0 3.54 0 7.91C0 12.28 3.54 15.83 7.91 15.83C12.28 15.83 15.83 12.28 15.83 7.91C15.83 3.54 12.28 0 7.91 0ZM9.3 11.55C8.98 11.9 8.8 12.11 8.45 12.44C7.93 12.94 7.33 13.08 6.87 12.58C6.21 11.87 6.91 9.71 6.92 9.63C7.05 9.06 7.3 7.91 7.3 7.91C7.3 7.91 6.76 8.24 6.44 8.36C6.2 8.44 5.94 8.33 5.87 8.1C5.81 7.89 5.86 7.76 5.99 7.61C6.31 7.26 6.49 7.05 6.84 6.72C7.36 6.21 7.95 6.08 8.42 6.58C9.08 7.28 8.59 8.45 8.42 9.28C8.4 9.36 7.99 11.25 7.99 11.25C7.99 11.25 8.53 10.92 8.85 10.8C9.09 10.72 9.35 10.83 9.42 11.06C9.48 11.27 9.43 11.4 9.3 11.55ZM8.44 5.44C7.7 5.51 7.05 4.96 6.99 4.22C6.92 3.48 7.47 2.83 8.21 2.77C8.95 2.7 9.6 3.25 9.66 3.99C9.73 4.73 9.18 5.38 8.44 5.44Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+
+            <p>basic information</p>
+          </div>
+          <div class="profile_sidebar_item menu_item" data-id="menu3">
+            <svg
+              width="15.833496"
+              height="15.833984"
+              viewBox="0 0 15.8335 15.834"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs />
+              <path
+                id="Vector"
+                d="M15.83 7.91C15.83 12.28 12.28 15.83 7.91 15.83C3.54 15.83 0 12.28 0 7.91C0 3.54 3.54 0 7.91 0C12.28 0 15.83 3.54 15.83 7.91ZM10.29 5.54C10.29 6.85 9.22 7.91 7.91 7.91C6.6 7.91 5.54 6.85 5.54 5.54C5.54 4.23 6.6 3.16 7.91 3.16C9.22 3.16 10.29 4.23 10.29 5.54ZM7.91 14.64C9.32 14.64 10.63 14.21 11.72 13.46C12.2 13.13 12.4 12.51 12.12 12C11.55 10.94 10.36 10.29 7.91 10.29C5.47 10.29 4.28 10.94 3.7 12C3.42 12.51 3.63 13.13 4.11 13.46C5.19 14.21 6.5 14.64 7.91 14.64Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="evenodd"
+              />
+            </svg>
+
+            <p>Obituary</p>
+          </div>
+          <div class="profile_sidebar_item menu_item" data-id="menu4">
+            <svg
+              width="16.812012"
+              height="15.833984"
+              viewBox="0 0 16.812 15.834"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs />
+              <path
+                id="Vector"
+                d="M16.11 15.27C16.24 15.27 16.37 15.21 16.45 15.11C16.54 15 16.57 14.86 16.55 14.73L16.26 13.39C16.42 13.24 16.52 13.02 16.52 12.77C16.52 12.52 16.41 12.29 16.23 12.14L16.23 7.48L15.1 8.18L15.1 12.14C14.92 12.29 14.81 12.52 14.81 12.77C14.81 13.02 14.91 13.24 15.07 13.39L14.79 14.73C14.76 14.86 14.79 15 14.88 15.11C14.97 15.21 15.09 15.27 15.23 15.27L16.11 15.27ZM16.49 4.77L9.1 0.19C8.89 0.06 8.64 0 8.4 0C8.16 0 7.91 0.06 7.7 0.19L0.31 4.77C0.11 4.89 0 5.1 0 5.34C0 5.57 0.11 5.78 0.31 5.91L7.7 10.48C7.91 10.61 8.16 10.68 8.4 10.68C8.64 10.68 8.89 10.61 9.1 10.48L16.49 5.91C16.69 5.78 16.81 5.57 16.81 5.34C16.81 5.1 16.69 4.89 16.49 4.77ZM8.4 11.81C7.94 11.81 7.49 11.69 7.1 11.44L2.79 8.78L2.79 13.37C2.79 14.73 5.3 15.83 8.4 15.83C11.5 15.83 14.01 14.73 14.01 13.37L14.01 8.78L9.7 11.44C9.31 11.69 8.86 11.81 8.4 11.81Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+
+            <p>Education and career</p>
+          </div>
+          <div class="profile_sidebar_item menu_item" data-id="menu5">
+            <svg
+              width="19.090820"
+              height="15.833984"
+              viewBox="0 0 19.0908 15.834"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs />
+              <path
+                id="Vector"
+                d="M17.18 2.87L12.19 2.87L12.19 1.08C12.19 0.41 11.6 0 10.88 0C10.88 0 8.11 0 8.13 0C7.42 0 6.81 0.41 6.81 1.08L6.81 2.95L1.9 2.95C0.91 2.95 0 3.79 0 4.89C0 4.92 0 13.8 0 13.8C0 15.03 0.92 15.83 1.89 15.83L17.19 15.83C18.16 15.83 19.09 15.1 19.09 13.85C19.09 13.85 19.09 4.88 19.09 4.84C19.08 3.72 18.16 2.87 17.18 2.87ZM7.8 1.06L11.21 1.06L11.21 2.95L7.8 2.95L7.8 1.06ZM9.54 13.18C7.41 13.18 5.68 11.45 5.68 9.32C5.68 7.19 7.41 5.46 9.54 5.46C11.67 5.46 13.4 7.19 13.4 9.32C13.4 11.45 11.67 13.18 9.54 13.18ZM12.01 8.65L10.78 9.85L11.07 11.55L9.54 10.75L8.02 11.55L8.31 9.85L7.07 8.65L8.78 8.4L9.54 6.85L10.3 8.4L12.01 8.65Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <p>Personal achievements</p>
+          </div>
+          <div class="profile_sidebar_item menu_item" data-id="menu6">
+            <svg
+              width="17.632324"
+              height="11.281250"
+              viewBox="0 0 17.6323 11.2812"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs />
+              <path
+                id="Vector"
+                d="M17.63 2.91L17.63 2.01C17.63 2.01 15.82 1.82 13.63 2.66C11.45 3.51 9.86 3.29 9.64 3.07C9.42 2.85 8.42 1.88 8.27 1.76C8.11 1.63 7.8 1.13 7.45 1.45C7.39 1.5 7.33 1.53 7.27 1.56L7.61 0.84C7.67 0.72 7.79 0.65 7.92 0.65L9.79 0.65C9.97 0.65 9.96 0.5 9.96 0.32C9.96 0.14 9.97 0 9.79 0L7.92 0C7.54 0 7.19 0.21 7.02 0.55L6.59 1.44C6.41 1.3 5.71 0.81 4.69 0.76L4.69 2.94C4.69 2.94 5.44 2.88 5.9 2.8L5.37 3.69C4.64 3.28 3.79 3.07 2.89 3.14C2.2 3.19 1.56 3.4 1 3.72L1.21 4.34C1.67 4.1 2.18 3.95 2.72 3.91C3.62 3.85 4.36 3.99 4.99 4.33L4.39 5.35C3.99 5.17 3.56 5.07 3.1 5.07C1.39 5.07 0 6.46 0 8.17C0 9.89 1.39 11.28 3.1 11.28C4.81 11.28 6.21 9.89 6.21 8.17C6.21 7.18 5.74 6.31 5.03 5.74L5.6 4.77C6.18 5.3 6.63 6.08 6.99 7.11C7 7.15 7.41 7.5 7.41 7.53L7.46 7.42C7.51 8.42 8.3 8.44 8.3 8.44C8.3 8.44 10.32 8.44 11.23 8.44C12.35 4.16 16.88 3.13 17.63 2.91ZM4.96 8.17C4.96 9.2 4.13 10.03 3.1 10.03C2.07 10.03 1.24 9.2 1.24 8.17C1.24 7.15 2.07 6.32 3.1 6.32C3.33 6.32 3.54 6.36 3.74 6.43L3.09 7.53C2.74 7.54 2.46 7.82 2.46 8.17C2.46 8.52 2.75 8.81 3.1 8.81C3.45 8.81 3.74 8.52 3.74 8.17C3.74 8.1 3.72 8.03 3.7 7.97L4.38 6.83C4.73 7.17 4.96 7.64 4.96 8.17ZM5.99 4.11L6.47 3.3C6.69 3.84 6.93 4.7 7.13 5.5C6.84 4.96 6.46 4.49 5.99 4.11Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+
+            <p>Interests and hobbies</p>
+          </div>
+          <div class="profile_sidebar_item menu_item" data-id="menu7">
+            <svg
+              width="15.833496"
+              height="15.833984"
+              viewBox="0 0 15.8335 15.834"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs />
+              <path
+                id="comment-3"
+                d="M11.87 7.91C11.32 7.91 10.88 7.47 10.88 6.92C10.88 6.38 11.32 5.93 11.87 5.93C12.42 5.93 12.86 6.38 12.86 6.92C12.86 7.47 12.42 7.91 11.87 7.91ZM7.91 7.91C7.37 7.91 6.92 7.47 6.92 6.92C6.92 6.38 7.37 5.93 7.91 5.93C8.46 5.93 8.9 6.38 8.9 6.92C8.9 7.47 8.46 7.91 7.91 7.91ZM3.95 7.91C3.41 7.91 2.96 7.47 2.96 6.92C2.96 6.38 3.41 5.93 3.95 5.93C4.5 5.93 4.94 6.38 4.94 6.92C4.94 7.47 4.5 7.91 3.95 7.91ZM7.91 0C3.54 0 0 3.1 0 6.92C0 9.11 1.16 11.06 2.96 12.33L2.96 15.83L6.43 13.72C6.91 13.8 7.41 13.85 7.91 13.85C12.28 13.85 15.83 10.75 15.83 6.92C15.83 3.1 12.28 0 7.91 0Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="evenodd"
+              />
+            </svg>
+
+            <p>Stories and jokes</p>
+          </div>
+          <div class="profile_sidebar_item menu_item" data-id="menu8">
+            <svg
+              width="19.791504"
+              height="15.833984"
+              viewBox="0 0 19.7915 15.834"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs />
+              <path
+                id="Vector"
+                d="M18.8 0L4.94 0C4.68 0 4.43 0.1 4.24 0.28C4.06 0.47 3.95 0.72 3.95 0.99L3.95 3.95L8.9 3.95L8.9 1.97L14.84 1.97L14.84 11.87L18.8 11.87C19.06 11.87 19.31 11.77 19.5 11.58C19.68 11.4 19.79 11.14 19.79 10.88L19.79 0.99C19.79 0.72 19.68 0.47 19.5 0.28C19.31 0.1 19.06 0 18.8 0ZM7.17 3.18C7.17 3.25 7.14 3.33 7.09 3.38C7.04 3.43 6.97 3.46 6.89 3.46L5.96 3.46C5.89 3.46 5.82 3.43 5.77 3.38C5.71 3.33 5.68 3.25 5.68 3.18L5.68 2.25C5.68 2.18 5.71 2.11 5.77 2.06C5.82 2 5.89 1.97 5.96 1.97L6.89 1.97C6.97 1.97 7.04 2 7.09 2.06C7.14 2.11 7.17 2.18 7.17 2.25L7.17 3.18ZM18.06 9.61C18.06 9.69 18.03 9.76 17.97 9.81C17.92 9.86 17.85 9.89 17.78 9.89L16.85 9.89C16.77 9.89 16.7 9.86 16.65 9.81C16.6 9.76 16.57 9.69 16.57 9.61L16.57 8.68C16.57 8.61 16.6 8.54 16.65 8.49C16.7 8.44 16.77 8.41 16.85 8.41L17.78 8.41C17.85 8.41 17.92 8.44 17.97 8.49C18.03 8.54 18.06 8.61 18.06 8.68L18.06 9.61ZM18.06 6.4C18.06 6.47 18.03 6.54 17.97 6.59C17.92 6.65 17.85 6.67 17.78 6.67L16.85 6.67C16.77 6.67 16.7 6.65 16.65 6.59C16.6 6.54 16.57 6.47 16.57 6.4L16.57 5.47C16.57 5.4 16.6 5.32 16.65 5.27C16.7 5.22 16.77 5.19 16.85 5.19L17.78 5.19C17.85 5.19 17.92 5.22 17.97 5.27C18.03 5.32 18.06 5.4 18.06 5.47L18.06 6.4ZM18.06 3.18C18.06 3.25 18.03 3.33 17.97 3.38C17.92 3.43 17.85 3.46 17.78 3.46L16.85 3.46C16.77 3.46 16.7 3.43 16.65 3.38C16.6 3.33 16.57 3.25 16.57 3.18L16.57 2.25C16.57 2.18 16.6 2.11 16.65 2.06C16.7 2 16.77 1.97 16.85 1.97L17.78 1.97C17.85 1.97 17.92 2 17.97 2.06C18.03 2.11 18.06 2.18 18.06 2.25L18.06 3.18ZM12.86 4.94L0.98 4.94C0.72 4.94 0.47 5.05 0.29 5.23C0.1 5.42 0 5.67 0 5.93L0 14.84C0 15.1 0.1 15.35 0.29 15.54C0.47 15.72 0.72 15.83 0.98 15.83L12.86 15.83C13.12 15.83 13.37 15.72 13.56 15.54C13.75 15.35 13.85 15.1 13.85 14.84L13.85 5.93C13.85 5.67 13.75 5.42 13.56 5.23C13.37 5.05 13.12 4.94 12.86 4.94ZM2.96 6.92C3.16 6.92 3.35 6.98 3.51 7.09C3.68 7.2 3.8 7.35 3.88 7.53C3.95 7.71 3.97 7.91 3.93 8.1C3.9 8.3 3.8 8.47 3.66 8.61C3.53 8.75 3.35 8.84 3.16 8.88C2.96 8.92 2.77 8.9 2.58 8.83C2.4 8.75 2.25 8.62 2.14 8.46C2.03 8.3 1.97 8.11 1.97 7.91C1.97 7.65 2.08 7.4 2.26 7.21C2.45 7.03 2.7 6.92 2.96 6.92ZM11.87 13.85L1.97 13.85L1.97 12.86L3.95 10.88L4.94 11.87L8.9 7.91L11.87 10.88L11.87 13.85Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <p>Photos & Video</p>
+          </div>
+          <div class="profile_sidebar_item menu_item" data-id="menu9">
+            <svg
+              width="16.137695"
+              height="15.833984"
+              viewBox="0 0 16.1377 15.834"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs />
+              <path
+                id="Vector"
+                d="M8.4 0.2L8.4 4.21C9.42 4.17 10.41 3.93 11.31 3.51C10.65 1.68 9.59 0.41 8.4 0.2Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M2.6 1.97C3.08 2.45 3.62 2.85 4.19 3.18C4.73 1.72 5.52 0.6 6.46 0C4.99 0.29 3.66 0.99 2.6 1.97Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M9.67 0C10.61 0.6 11.4 1.72 11.94 3.18C12.51 2.85 13.05 2.45 13.53 1.97C12.47 0.99 11.14 0.29 9.67 0Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M4.08 8.25C4.11 9.47 4.3 10.62 4.59 11.64C5.57 11.2 6.63 10.95 7.73 10.91L7.73 8.25L4.08 8.25Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M4.81 12.29C5.47 14.13 6.53 15.41 7.73 15.62L7.73 11.59C6.7 11.63 5.71 11.87 4.81 12.29Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M14.01 2.44C13.45 3 12.83 3.47 12.16 3.84C12.49 4.95 12.69 6.22 12.71 7.58L16.13 7.58C16.05 5.6 15.26 3.81 14.01 2.44Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M2.12 2.44C0.87 3.81 0.08 5.6 0 7.58L3.41 7.58C3.44 6.22 3.64 4.95 3.97 3.84C3.3 3.47 2.68 3 2.12 2.44Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M4.6 4.16C4.3 5.18 4.11 6.35 4.09 7.57L7.73 7.57L7.73 4.89C6.63 4.85 5.57 4.6 4.6 4.16Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M4.81 3.51C5.72 3.93 6.7 4.17 7.73 4.21L7.73 0.2C6.54 0.41 5.48 1.68 4.81 3.51Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M3.41 8.25L0 8.25C0.08 10.22 0.86 12.01 2.11 13.37C2.67 12.81 3.29 12.34 3.96 11.96C3.64 10.86 3.44 9.6 3.41 8.25Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M12.72 8.25C12.69 9.6 12.49 10.86 12.16 11.96C12.83 12.34 13.46 12.81 14.01 13.36L14.02 13.37C15.27 12.01 16.05 10.22 16.13 8.25L12.72 8.25Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M13.54 13.84C13.06 13.36 12.52 12.96 11.94 12.62C11.4 14.09 10.61 15.22 9.67 15.83C11.15 15.53 12.48 14.83 13.54 13.85L13.54 13.84Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M11.53 4.16C10.55 4.6 9.49 4.85 8.4 4.89L8.4 7.57L12.04 7.57C12.01 6.35 11.83 5.18 11.53 4.16Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M4.18 12.62C3.61 12.96 3.07 13.36 2.59 13.84C3.65 14.83 4.98 15.53 6.46 15.83C5.52 15.22 4.72 14.09 4.18 12.62Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M8.4 11.59L8.4 15.62C9.59 15.41 10.66 14.13 11.32 12.29C10.41 11.87 9.43 11.63 8.4 11.59Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+              <path
+                id="Vector"
+                d="M8.4 8.25L8.4 10.91C9.5 10.95 10.56 11.2 11.53 11.65C11.83 10.62 12.01 9.47 12.04 8.25L8.4 8.25Z"
+                fill="#252525"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+
+            <p>Social media</p>
+          </div>
+        </div>
+      </div>
+      <div class="edit_block_content">
+        <!-- menu 1 -->
+        <div class="menu_item_content active_menu" id="menu1">
+          <div class="edit_page">
+            <div class="edit_page_main">
+              <div class="content_page_title">
+                <h2>photo settings</h2>
+                <p>Note: Completing all fields is optional.</p>
+              </div>
+              <div class="file_upload_block">
+                <div class="upload_avatar">
+                  <img
+                    id="current-photo"
+                    src="./assets/icons/default-profile.svg"
+                    alt="Current photo"
+                  />
+                  <div class="upload_status">Current photo</div>
+                </div>
+                <div class="drag_box" id="drag-box">
+                  <div class="drag_box_block">
+                    <img src="./assets/icons/drag.svg" alt="Drag icon" />
+                    <p>
+                      Drag the required <br />
+                      photo here
+                    </p>
+                  </div>
+                  <div class="upload_status">New photo</div>
+                </div>
+                <div class="upload_desc">
+                  <input
+                    type="file"
+                    id="file-input"
+                    style="display: none"
+                    accept="image/jpeg, image/png, image/gif"
+                  />
+                  <button class="upload_btn" id="choose-photo-btn">
+                    Choose photo
+                  </button>
+                  <p>
+                    jpeg/png/gif up to 4Mb in size - only you <br />
+                    should be depicted in the photo
+                  </p>
+                </div>
+              </div>
+
+              <div class="content_line"></div>
+              <div class="inputs_list">
+                <div class="data_input">
+                  <p>First Name</p>
+                  <input type="text" placeholder="First Name" />
+                </div>
+                <div class="data_input">
+                  <p>Middle Name</p>
+                  <input type="text" placeholder="Middle Name" />
+                </div>
+                <div class="data_input">
+                  <p>Last Name</p>
+                  <input type="text" placeholder="Last Name" />
+                </div>
+              </div>
+            </div>
+            <div class="page_actions">
+              <button class="save_btn">Save</button>
+              <button class="edit_btn">Edit</button>
+              <button class="delete_btn">Delete</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- menu 2 -->
+        <div class="menu_item_content" id="menu2">
+          <div class="edit_page">
+            <div class="edit_page_main">
+              <div class="content_page_title">
+                <h2>basic information</h2>
+                <p>Note: Completing all fields is optional.</p>
+              </div>
+              <div class="inputs_list mb_25px">
+                <div class="data_input">
+                  <p>First Name</p>
+                  <input type="text" placeholder="First Name" />
+                </div>
+                <div class="data_input">
+                  <p>Middle Name</p>
+                  <input type="text" placeholder="Middle Name" />
+                </div>
+                <div class="data_input">
+                  <p>Last Name</p>
+                  <input type="text" placeholder="Last Name" />
+                </div>
+              </div>
+              <div class="data_input mb_25px">
+                <p>Profession</p>
+                <input type="text" placeholder="Profession" />
+              </div>
+              <div class="inputs_list mb_25px">
+                <div class="data_input">
+                  <p>Date of Birth</p>
+                  <input type="text" placeholder="00/00/0000" />
+                </div>
+                <div class="data_input">
+                  <p>Date of death</p>
+                  <input type="text" placeholder="00/00/0000" />
+                </div>
+              </div>
+            </div>
+
+            <div class="page_actions">
+              <button class="save_btn">Save</button>
+              <button class="edit_btn">Edit</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- menu 3 -->
+        <div class="menu_item_content" id="menu3">
+          <div class="edit_page">
+            <div class="edit_page_main">
+              <div class="content_page_title">
+                <h2>Obituary <span>Biographical information:</span></h2>
+                <p>Note: Completing all fields is optional.</p>
+              </div>
+
+              <div class="data_input mb_25px">
+                <p>
+                  Full name <span>(including maiden name, if applicable)</span>
+                </p>
+                <input type="text" placeholder="Full name" />
+              </div>
+              <div class="inputs_list mb_25px">
+                <div class="data_input">
+                  <p>Place of Birth</p>
+                  <input type="text" placeholder="Place of Birth" />
+                </div>
+                <div class="data_input">
+                  <p>Place of residence</p>
+                  <input type="text" placeholder="Place of residence" />
+                </div>
+              </div>
+              <div class="data_input">
+                <p>
+                  Marital status
+                  <span>(e.g. married, children, grandchildren)</span>
+                </p>
+                <input type="text" placeholder="Marital status" />
+              </div>
+            </div>
+
+            <div class="page_actions">
+              <button class="save_btn">Save</button>
+              <button class="edit_btn">Edit</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- menu 4 -->
+        <div class="menu_item_content" id="menu4">
+          <div class="edit_page">
+            <div class="edit_page_main">
+              <div class="content_page_title">
+                <h2>Education and career</h2>
+                <p>Note: Completing all fields is optional.</p>
+              </div>
+
+              <div class="data_input mb_25px">
+                <p>
+                  Education
+                  <span>(schools, universities, degrees obtained)</span>
+                </p>
+                <textarea placeholder="Education"></textarea>
+              </div>
+              <div class="data_input mb_25px">
+                <p>
+                  Professional career
+                  <span>(positions, companies, achievements at work)</span>
+                </p>
+                <textarea placeholder="Professional career"></textarea>
+              </div>
+              <div class="data_input mb_25px">
+                <p>
+                  Military service
+                  <span>(if applicable, ranks, units, medals)</span>
+                </p>
+                <textarea placeholder="Military service"></textarea>
+              </div>
+            </div>
+
+            <div class="page_actions">
+              <button class="save_btn">Save</button>
+              <button class="edit_btn">Edit</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- menu 5 -->
+        <div class="menu_item_content" id="menu5">
+          <div class="edit_page">
+            <div class="edit_page_main">
+              <div class="content_page_title">
+                <h2>Personal achievements</h2>
+                <p>Note: Completing all fields is optional.</p>
+              </div>
+
+              <div class="data_input mb_25px">
+                <p>Personal achievements and awards</p>
+                <textarea
+                  placeholder="Personal achievements and awards"
+                ></textarea>
+              </div>
+
+              <div class="data_input mb_25px">
+                <p>
+                  Participation in public life
+                  <span>(volunteering, membership in organizations)</span>
+                </p>
+                <textarea placeholder="Participation in public life"></textarea>
+              </div>
+            </div>
+
+            <div class="page_actions">
+              <button class="save_btn">Save</button>
+              <button class="edit_btn">Edit</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- menu 6 -->
+        <div class="menu_item_content" id="menu6">
+          <div class="edit_page">
+            <div class="edit_page_main">
+              <div class="content_page_title">
+                <h2>Interests and hobbies</h2>
+                <p>Note: Completing all fields is optional.</p>
+              </div>
+
+              <div class="data_input mb_25px">
+                <p>Favorite activities and hobbies</p>
+                <textarea
+                  placeholder="Favorite activities and hobbies"
+                ></textarea>
+              </div>
+              <div class="data_input mb_25px">
+                <p>Hobbies <span>(sports, music, art, etc.)</span></p>
+                <textarea placeholder="Hobbies"></textarea>
+              </div>
+              <div class="data_input mb_25px">
+                <p>Travel <span>(favorite places, important trips)</span></p>
+                <textarea placeholder="Travel"></textarea>
+              </div>
+
+              <div class="content_page_title">
+                <h2>Personal qualities and character traits:</h2>
+              </div>
+
+              <div class="data_input mb_25px">
+                <p>Description of personality and character</p>
+                <textarea
+                  placeholder="Description of personality and character"
+                ></textarea>
+              </div>
+              <div class="data_input mb_25px">
+                <p>Important qualities that made this person stand out</p>
+                <textarea
+                  placeholder="Important qualities that made this person stand out"
+                ></textarea>
+              </div>
+              <div class="data_input mb_50px">
+                <p>Recollections of how he/she impacted the lives of others</p>
+                <textarea
+                  placeholder="Recollections of how he/she impacted the lives of others"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="page_actions">
+              <button class="save_btn">Save</button>
+              <button class="edit_btn">Edit</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- menu 7 -->
+        <div class="menu_item_content" id="menu7">
+          <div class="edit_page">
+            <div class="edit_page_main">
+              <div class="content_page_title">
+                <h2>Stories and jokes</h2>
+                <p>Note: Completing all fields is optional.</p>
+              </div>
+
+              <div class="data_input mb_25px">
+                <p>Personal stories and anecdotes</p>
+                <textarea
+                  placeholder="Personal stories and anecdotes"
+                ></textarea>
+              </div>
+              <div class="data_input mb_25px">
+                <p>
+                  Important moments in life that were remembered by relatives
+                  and friends
+                </p>
+                <textarea
+                  placeholder="Important moments in life that were remembered by relatives and friends"
+                ></textarea>
+              </div>
+              <div class="data_input mb_25px">
+                <p>Statements that characterize his/her worldview</p>
+                <textarea
+                  placeholder="Statements that characterize his/her worldview"
+                ></textarea>
+              </div>
+
+              <div class="content_page_title">
+                <h2>Other:</h2>
+              </div>
+
+              <div class="data_input mb_50px">
+                <p>
+                  Any other important aspects of life and personality that will
+                  help create a complete picture of the person
+                </p>
+                <textarea
+                  placeholder="Any other important aspects of life and personality that will help create a complete picture of the person"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="page_actions">
+              <button class="save_btn">Save</button>
+              <button class="edit_btn">Edit</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- menu 8 -->
+        <div class="menu_item_content" id="menu8">
+          <div class="edit_page">
+            <div class="edit_page_main">
+              <div class="content_page_title">
+                <h2>Photos & Video</h2>
+                <p>Note: Completing all fields is optional.</p>
+              </div>
+              <div class="photo_video_hanlers">
+                <button
+                  class="photo_video_hanler active_handler"
+                  data-id="photos_upload"
+                >
+                  Photos
+                </button>
+                <button class="photo_video_hanler" data-id="videos_upload">
+                  Video
+                </button>
+              </div>
+              <div class="upload_content active_handler" id="photos_upload">
+                <div class="photo_upload_block">
+                  <div class="drag_box">
+                    <div class="drag_box_block">
+                      <img src="./assets/icons/drag.svg" alt="" />
+                      <p>
+                        Drag the required <br />
+                        photo here
+                      </p>
+                    </div>
+                  </div>
+                  <div class="upload_desc">
+                    <button class="upload_btn">Choose photo</button>
+                    <p>
+                      jpeg/png/gif up to 4Mb in size - only you <br />
+                      should be depicted in the photo
+                    </p>
+                    <button class="save_btn">Upload photos</button>
+                  </div>
+                </div>
+                <div class="upload_gallery">
+                  <h3>Photo gallery</h3>
+                  <div class="upload_gallery_wrapper">
+                    <div class="upload_gallery_item">
+                      <img
+                        src="./assets/images/photo-gallery.png"
+                        class="upload_gallery_item_image"
+                        alt=""
+                      />
+                      <div class="photo_actions_menu">
+                        <img
+                          class="photo_actions_menu_btn"
+                          src="./assets/icons/actions-menu.svg"
+                          alt=""
+                        />
+                        <div class="photo_actions_menu_list">
+                          <img
+                            src="./assets/icons/action-menu-1.svg"
+                            alt=""
+                            data-modal-target="#photo_edit_modal"
+                          />
+                          <div class="menu_line"></div>
+                          <img src="./assets/icons/action-menu-2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="upload_gallery_item">
+                      <img
+                        src="./assets/images/photo-gallery.png"
+                        class="upload_gallery_item_image"
+                        alt=""
+                      />
+                      <div class="photo_actions_menu">
+                        <img
+                          class="photo_actions_menu_btn"
+                          src="./assets/icons/actions-menu.svg"
+                          alt=""
+                        />
+                        <div class="photo_actions_menu_list">
+                          <img
+                            src="./assets/icons/action-menu-1.svg"
+                            alt=""
+                            data-modal-target="#photo_edit_modal"
+                          />
+                          <div class="menu_line"></div>
+                          <img src="./assets/icons/action-menu-2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="upload_gallery_item">
+                      <img
+                        src="./assets/images/photo-gallery.png"
+                        class="upload_gallery_item_image"
+                        alt=""
+                      />
+                      <div class="photo_actions_menu">
+                        <img
+                          class="photo_actions_menu_btn"
+                          src="./assets/icons/actions-menu.svg"
+                          alt=""
+                        />
+                        <div class="photo_actions_menu_list">
+                          <img
+                            src="./assets/icons/action-menu-1.svg"
+                            alt=""
+                            data-modal-target="#photo_edit_modal"
+                          />
+                          <div class="menu_line"></div>
+                          <img src="./assets/icons/action-menu-2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="upload_gallery_item">
+                      <img
+                        src="./assets/images/photo-gallery.png"
+                        class="upload_gallery_item_image"
+                        alt=""
+                      />
+                      <div class="photo_actions_menu">
+                        <img
+                          class="photo_actions_menu_btn"
+                          src="./assets/icons/actions-menu.svg"
+                          alt=""
+                        />
+                        <div class="photo_actions_menu_list">
+                          <img
+                            src="./assets/icons/action-menu-1.svg"
+                            alt=""
+                            data-modal-target="#photo_edit_modal"
+                          />
+                          <div class="menu_line"></div>
+                          <img src="./assets/icons/action-menu-2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="upload_gallery_item">
+                      <img
+                        src="./assets/images/photo-gallery.png"
+                        class="upload_gallery_item_image"
+                        alt=""
+                      />
+                      <div class="photo_actions_menu">
+                        <img
+                          class="photo_actions_menu_btn"
+                          src="./assets/icons/actions-menu.svg"
+                          alt=""
+                        />
+                        <div class="photo_actions_menu_list">
+                          <img
+                            src="./assets/icons/action-menu-1.svg"
+                            alt=""
+                            data-modal-target="#photo_edit_modal"
+                          />
+                          <div class="menu_line"></div>
+                          <img src="./assets/icons/action-menu-2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="upload_gallery_item">
+                      <img
+                        src="./assets/images/photo-gallery.png"
+                        class="upload_gallery_item_image"
+                        alt=""
+                      />
+                      <div class="photo_actions_menu">
+                        <img
+                          class="photo_actions_menu_btn"
+                          src="./assets/icons/actions-menu.svg"
+                          alt=""
+                        />
+                        <div class="photo_actions_menu_list">
+                          <img
+                            src="./assets/icons/action-menu-1.svg"
+                            alt=""
+                            data-modal-target="#photo_edit_modal"
+                          />
+                          <div class="menu_line"></div>
+                          <img src="./assets/icons/action-menu-2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="load_more_btn">
+                    <button>Load more</button>
+                  </div>
+                </div>
+              </div>
+              <div class="upload_content" id="videos_upload">
+                <div class="photo_upload_block">
+                  <div class="drag_box">
+                    <div class="drag_box_block">
+                      <img src="./assets/icons/drag.svg" alt="" />
+                      <p>
+                        Drag the required <br />
+                        video here
+                      </p>
+                    </div>
+                  </div>
+                  <div class="upload_desc">
+                    <button class="upload_btn">Choose Video</button>
+                    <p>
+                      mp4/avi up to 1000Mb in size - only you <br />
+                      should be depicted in the video
+                    </p>
+                    <button class="save_btn">Upload videos</button>
+                  </div>
+                </div>
+                <div class="upload_gallery">
+                  <h3>Video gallery</h3>
+                  <div class="upload_gallery_wrapper">
+                    <div class="upload_gallery_item">
+                      <img
+                        src="./assets/images/video.svg"
+                        class="upload_gallery_item_image"
+                        alt=""
+                      />
+                      <div class="photo_actions_menu">
+                        <img
+                          class="photo_actions_menu_btn"
+                          src="./assets/icons/actions-menu.svg"
+                          alt=""
+                        />
+                        <div class="photo_actions_menu_list">
+                          <img
+                            src="./assets/icons/action-menu-1.svg"
+                            alt=""
+                            data-modal-target="#video_edit_modal"
+                          />
+                          <div class="menu_line"></div>
+                          <img src="./assets/icons/action-menu-2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="upload_gallery_item">
+                      <img
+                        src="./assets/images/video.svg"
+                        class="upload_gallery_item_image"
+                        alt=""
+                      />
+                      <div class="photo_actions_menu">
+                        <img
+                          class="photo_actions_menu_btn"
+                          src="./assets/icons/actions-menu.svg"
+                          alt=""
+                        />
+                        <div class="photo_actions_menu_list">
+                          <img
+                            src="./assets/icons/action-menu-1.svg"
+                            alt=""
+                            data-modal-target="#video_edit_modal"
+                          />
+                          <div class="menu_line"></div>
+                          <img src="./assets/icons/action-menu-2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="upload_gallery_item">
+                      <img
+                        src="./assets/images/video.svg"
+                        class="upload_gallery_item_image"
+                        alt=""
+                      />
+                      <div class="photo_actions_menu">
+                        <img
+                          class="photo_actions_menu_btn"
+                          src="./assets/icons/actions-menu.svg"
+                          alt=""
+                        />
+                        <div class="photo_actions_menu_list">
+                          <img
+                            src="./assets/icons/action-menu-1.svg"
+                            alt=""
+                            data-modal-target="#video_edit_modal"
+                          />
+                          <div class="menu_line"></div>
+                          <img src="./assets/icons/action-menu-2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="upload_gallery_item">
+                      <img
+                        src="./assets/images/video.svg"
+                        class="upload_gallery_item_image"
+                        alt=""
+                      />
+                      <div class="photo_actions_menu">
+                        <img
+                          class="photo_actions_menu_btn"
+                          src="./assets/icons/actions-menu.svg"
+                          alt=""
+                        />
+                        <div class="photo_actions_menu_list">
+                          <img
+                            src="./assets/icons/action-menu-1.svg"
+                            alt=""
+                            data-modal-target="#video_edit_modal"
+                          />
+                          <div class="menu_line"></div>
+                          <img src="./assets/icons/action-menu-2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="upload_gallery_item">
+                      <img
+                        src="./assets/images/video.svg"
+                        class="upload_gallery_item_image"
+                        alt=""
+                      />
+                      <div class="photo_actions_menu">
+                        <img
+                          class="photo_actions_menu_btn"
+                          src="./assets/icons/actions-menu.svg"
+                          alt=""
+                        />
+                        <div class="photo_actions_menu_list">
+                          <img
+                            src="./assets/icons/action-menu-1.svg"
+                            alt=""
+                            data-modal-target="#video_edit_modal"
+                          />
+                          <div class="menu_line"></div>
+                          <img src="./assets/icons/action-menu-2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="upload_gallery_item">
+                      <img
+                        src="./assets/images/video.svg"
+                        class="upload_gallery_item_image"
+                        alt=""
+                      />
+                      <div class="photo_actions_menu">
+                        <img
+                          class="photo_actions_menu_btn"
+                          src="./assets/icons/actions-menu.svg"
+                          alt=""
+                        />
+                        <div class="photo_actions_menu_list">
+                          <img
+                            src="./assets/icons/action-menu-1.svg"
+                            alt=""
+                            data-modal-target="#video_edit_modal"
+                          />
+                          <div class="menu_line"></div>
+                          <img src="./assets/icons/action-menu-2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="load_more_btn">
+                    <button>Load more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- menu 9 -->
+        <div class="menu_item_content" id="menu9">
+          <div class="edit_page">
+            <div class="edit_page_main">
+              <div class="content_page_title">
+                <h2>Social media</h2>
+                <p>Note: Completing all fields is optional.</p>
+              </div>
+              <div class="data_input">
+                <p>Fields for entering links</p>
+                <div class="data_input_with_btn">
+                  <input type="text" placeholder="Add you social media link" />
+                  <button>Add link</button>
+                </div>
+              </div>
+              <div class="added_links">
+                <div class="added_link_item">
+                  <div class="added_link_item_link">
+                    <img src="./assets/icons/instagram.svg" alt="" />
+                    <p>
+                      https://...........................................................
+                    </p>
+                  </div>
+                  <div class="added_link_item_actions photo_video_hanlers">
+                    <button data-modal-target="#delete_modal">Remove</button>
+                    <button data-modal-target="#edit_links_modal">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page_actions">
+              <button class="save_btn" data-modal-target="#save_modal">
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- photo edit modal -->
+    <div class="modal_wrapper" id="photo_edit_modal">
+      <div class="modal_container">
+        <div class="modal_title">
+          <h3>Photo editing</h3>
+        </div>
+        <div class="file_edit_container">
+          <div class="editing_photo">
+            <img src="./assets/images/carousel.png" alt="" />
+          </div>
+          <div class="file_edit_block">
+            <h3>Choose another photo</h3>
+            <div class="photo_upload_block">
+              <div class="drag_box">
+                <div class="drag_box_block">
+                  <img src="./assets/icons/drag.svg" alt="" />
+                  <p>
+                    Drag the required <br />
+                    photo here
+                  </p>
+                </div>
+              </div>
+              <div class="upload_desc">
+                <button class="upload_btn">Choose photo</button>
+                <p>
+                  jpeg/png/gif up to 4Mb in size - only you <br />
+                  should be depicted in the photo
+                </p>
+                <button class="save_btn">Upload photos</button>
+              </div>
+            </div>
+            <button class="remove_btn">Remove</button>
+          </div>
+        </div>
+        <div class="editing_actions_list">
+          <div class="file_renaming">
+            <p>Rename</p>
+            <input type="text" placeholder="Lorem Ipsum is simply dummy text" />
+          </div>
+          <button class="save_changes_btn">Save</button>
+        </div>
+        <div class="exit_modal_btn">
+          <img src="./assets/icons/exit.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- video edit modal -->
+    <div class="modal_wrapper" id="video_edit_modal">
+      <div class="modal_container">
+        <div class="modal_title">
+          <h3>video editing</h3>
+        </div>
+        <div class="file_edit_container">
+          <div class="editing_photo">
+            <img src="./assets/images/video.svg" alt="" />
+          </div>
+          <div class="file_edit_block">
+            <h3>Choose another video</h3>
+            <div class="photo_upload_block">
+              <div class="drag_box">
+                <div class="drag_box_block">
+                  <img src="./assets/icons/drag.svg" alt="" />
+                  <p>
+                    Drag the required <br />
+                    video here
+                  </p>
+                </div>
+              </div>
+              <div class="upload_desc">
+                <button class="upload_btn">Choose Video</button>
+                <p>
+                  jpeg/png/gif up to 4Mb in size - only you <br />
+                  should be depicted in the photo
+                </p>
+                <button class="save_btn">Upload video</button>
+              </div>
+            </div>
+            <button class="remove_btn">Remove</button>
+          </div>
+        </div>
+        <div class="editing_actions_list">
+          <div class="file_renaming">
+            <p>Rename</p>
+            <input type="text" placeholder="Lorem Ipsum is simply dummy text" />
+          </div>
+          <button class="save_changes_btn">Save</button>
+        </div>
+        <div class="exit_modal_btn">
+          <img src="./assets/icons/exit.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- edit social links modal -->
+    <div class="modal_wrapper" id="edit_links_modal">
+      <div class="modal_container edit_social_links">
+        <div class="modal_title">
+          <h3>Edit social media link</h3>
+        </div>
+        <div class="socials_icons">
+          <div class="current_selected_icon">
+            <div class="current_selected_icon_block">
+              <img
+                id="current-icon"
+                src="./assets/icons/instagram.svg"
+                alt=""
+              />
+            </div>
+            <div class="upload_status">Current photo</div>
+          </div>
+          <div class="social_icons_list">
+            <div class="social_icons_list_block">
+              <div>
+                <img
+                  class="selected_social_icon"
+                  src="./assets/icons/selected.svg"
+                  alt=""
+                />
+                <img
+                  class="social_icon"
+                  src="./assets/icons/instagram.svg"
+                  alt=""
+                  onclick="selectIcon(this)"
+                />
+              </div>
+              <div>
+                <img
+                  class="selected_social_icon"
+                  src="./assets/icons/selected.svg"
+                  alt=""
+                />
+                <img
+                  class="social_icon"
+                  src="./assets/icons/twitter.svg"
+                  alt=""
+                  onclick="selectIcon(this)"
+                />
+              </div>
+              <div>
+                <img
+                  class="selected_social_icon"
+                  src="./assets/icons/selected.svg"
+                  alt=""
+                />
+                <img
+                  class="social_icon"
+                  src="./assets/icons/facebook.svg"
+                  alt=""
+                  onclick="selectIcon(this)"
+                />
+              </div>
+              <div>
+                <img
+                  class="selected_social_icon"
+                  src="./assets/icons/selected.svg"
+                  alt=""
+                />
+                <img
+                  class="social_icon"
+                  src="./assets/icons/lin.svg"
+                  alt=""
+                  onclick="selectIcon(this)"
+                />
+              </div>
+              <div>
+                <img
+                  class="selected_social_icon"
+                  src="./assets/icons/selected.svg"
+                  alt=""
+                />
+                <img
+                  class="social_icon"
+                  src="./assets/icons/tik-tok.svg"
+                  alt=""
+                  onclick="selectIcon(this)"
+                />
+              </div>
+            </div>
+            <div class="upload_status">Choose Icon</div>
+          </div>
+        </div>
+
+        <div class="editing_actions_list">
+          <div class="file_renaming">
+            <p>Link</p>
+            <input
+              type="text"
+              placeholder="https://..........................................................."
+            />
+          </div>
+          <button class="save_changes_btn">Save</button>
+        </div>
+        <div class="exit_modal_btn">
+          <img src="./assets/icons/exit.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- save modal -->
+    <div class="modal_wrapper" id="save_modal">
+      <div class="modal_container agreement_modal">
+        <div class="modal_title">
+          <h3>Save changes?</h3>
+        </div>
+        <div class="page_actions">
+          <button class="save_btn close_action">Yes</button>
+          <button class="edit_btn close_action">No</button>
+        </div>
+        <div class="exit_modal_btn">
+          <img src="./assets/icons/exit.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- delete modal -->
+    <div class="modal_wrapper" id="delete_modal">
+      <div class="modal_container agreement_modal">
+        <div class="modal_title">
+          <h3>
+            Do you really want <br />
+            to delete?
+          </h3>
+        </div>
+        <div class="page_actions">
+          <button class="save_btn close_action">Yes</button>
+          <button class="edit_btn close_action">No</button>
+        </div>
+        <div class="exit_modal_btn">
+          <img src="./assets/icons/exit.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer_wrapper container">
+        <div class="footer_logo">
+          <img src="./assets/logo.svg" alt="" />
+        </div>
+        <div class="footer_menu">
+          <div>
+            <a href="#"><p>Privacy Policy</p></a>
+            <a href="#"><p>Shipping Policy</p></a>
+          </div>
+          <div>
+            <a href="#"><p>User agreement</p></a>
+            <a href="#"><p>Contact information</p></a>
+          </div>
+          <div>
+            <a href="#"><p>Return and exchange policy</p></a>
+            <a href="#"><p>Information about goods and services</p></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/modals.js"></script>
+    <script src="./scripts/tabs-upload.js"></script>
+    <script src="./scripts/upload-img.js"></script>
+    
+  </body>
+</html>
