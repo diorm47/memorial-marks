@@ -103,6 +103,7 @@ nav {
   padding: 40px 33px 50px;
   box-shadow: 0px 0px 33.33px 0px rgba(0, 0, 0, 0.12);
   background: rgb(255, 255, 255);
+  margin-top: -40px;
 }
 
 .user_profile {
@@ -198,45 +199,11 @@ nav {
   transition: all 0.4s ease;
 }
 
-/* footer */
-footer {
-  background: rgb(37, 37, 37);
-  padding: 33px 0;
-}
-
-.footer_wrapper,
-.footer_menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer_logo img {
-  width: 236.67px;
-}
-
-.footer_menu {
-  gap: 100px;
-}
-.footer_menu p {
-  color: rgb(255, 255, 255);
-  font-family: Montserrat;
-  font-size: 13.33px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
-.footer_menu div a:nth-child(1) p {
-  margin-bottom: 12px;
-}
-
 .edit_block_content {
   width: 100%;
   max-width: 980px;
 
-  padding-top: 105px;
+  padding-top: 70px;
 }
 .content_page_title {
   margin-bottom: 34px;
@@ -964,4 +931,231 @@ footer {
 .professions_list::-webkit-scrollbar-thumb {
   border-radius: 15px;
   background: rgb(143, 143, 143);
+}
+
+.professions_list_input img {
+  position: absolute;
+  right: 40px;
+  bottom: 24px;
+}
+
+/*  */
+
+@media only screen and (max-width: 1200px) {
+  .edit_sidebar {
+    width: 30%;
+  }
+  .edit_block_content {
+    width: 66%;
+  }
+  .profile_sidebar_item {
+    padding-left: 20px;
+  }
+  .edit_sidebar {
+    padding: 26px 20px;
+  }
+  .profile_sidebar_item p {
+    font-size: 10px;
+  }
+  .profile_sidebar_item {
+    height: 27px;
+  }
+  .edit_sidebar {
+    height: auto;
+  }
+  .data_input input {
+    height: 34.67px;
+    font-size: 10.67px;
+    font-weight: 500;
+    line-height: 13px;
+    text-indent: 20px;
+  }
+  .data_input input::placeholder {
+    font-size: 10.67px;
+  }
+  .upload_avatar img {
+    width: 147.73px;
+    height: 147.73px;
+  }
+  .drag_box_block {
+    width: 150.4px;
+    height: 141.33px;
+  }
+  .upload_status {
+    font-size: 10px;
+    height: 19.73px;
+    margin-top: -10px;
+  }
+  .drag_box_block p {
+    font-size: 9.6px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+  .page_actions button {
+    width: 148.8px;
+    height: 28.8px;
+    font-size: 12.8px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+  .data_input p {
+    font-size: 10.67px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0%;
+    margin-bottom: 8px;
+  }
+  .upload_desc p {
+    font-size: 8.53px;
+    font-weight: 500;
+    line-height: 12.8px;
+  }
+  .upload_desc button {
+    width: 99.2px;
+    height: 19.73px;
+    margin-bottom: 10px;
+    font-size: 9.07px;
+    font-weight: 600;
+    line-height: 11px;
+  }
+
+  .professions_list_input img,
+  .calendar_icon {
+    right: 20px;
+    bottom: 14px;
+  }
+  .calendar_icon {
+    bottom: 10px;
+    width: 17px;
+  }
+  .professions_list {
+    padding: 8px;
+  }
+  .professions_item {
+    padding: 4px;
+    padding-left: 10px;
+  }
+  .professions_item span {
+    line-height: 100%;
+    font-size: 10px;
+  }
+
+  .content_page_title h2 {
+    font-size: 22.4px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0%;
+    margin-bottom: 5px;
+  }
+  .content_page_title p {
+    font-size: 8.53px;
+    font-weight: 500;
+    line-height: 10px;
+    letter-spacing: 0%;
+  }
+  .edit_block_content {
+    padding-top: 40px;
+  }
+  .content_page_title h2 span {
+    padding: 3px 26px;
+    font-size: 10.67px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 0%;
+  }
+  .data_input span {
+    font-size: 8.53px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 0%;
+  }
+  .data_input textarea {
+    height: 80px !important;
+    padding: 10px 20px;
+    font-size: 10.67px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0%;
+  }
+
+  .mb_25px {
+    margin-bottom: 16px;
+  }
+  .edit_wrapper {
+    gap: 30px;
+  }
+  .photo_upload_block {
+    gap: 20px;
+  }
+  .upload_desc .save_btn {
+    width: 113.07px;
+    height: 26.67px;
+  }
+  .user_profile {
+    gap: 17px;
+    margin-bottom: 16px;
+  }
+  .user_profile_avatar {
+    width: 75.2px;
+    height: 75.2px;
+  }
+  .user_profile_username p {
+    font-size: 14.93px;
+  }
+  .photo_video_hanlers button {
+    width: 81.6px;
+    height: 25.6px;
+    font-size: 11.2px;
+  }
+  .photo_video_hanlers {
+    gap: 10px;
+  }
+
+  .upload_gallery h3 {
+    font-size: 17.07px;
+    margin-bottom: 16px;
+  }
+  .upload_gallery {
+    margin-top: 30px;
+  }
+
+  .photo_video_hanlers {
+    margin-bottom: 30px;
+  }
+  .data_input_with_btn input {
+    width: 70%;
+  }
+
+  .data_input_with_btn button {
+    width: 111.47px;
+    height: 34.67px;
+    font-size: 12.8px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+  .added_link_item_actions {
+    margin: 0;
+  }
+  .added_link_item {
+    gap: 30px;
+  }
+
+  .added_link_item_link p {
+    font-size: 10.67px;
+    font-weight: 500;
+    line-height: 13px;
+  }
+
+  .change_wall_btn {
+    width: 132.27px;
+    height: 26.67px;
+    font-size: 8.53px;
+    font-weight: 500;
+    line-height: 10px;
+    gap: 10px;
+  }
+  .change_wall_btn img {
+    width: 11.35px;
+  }
 }
