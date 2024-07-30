@@ -888,3 +888,80 @@ footer {
 .selected_social_icon {
   display: none;
 }
+
+.calendar_input {
+  position: relative;
+}
+.calendar_icon {
+  position: absolute;
+  right: 40px;
+  bottom: 16px;
+  cursor: pointer;
+}
+
+.professions_list_input {
+  position: relative;
+}
+.professions_list {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 15px;
+  z-index: 16;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.14);
+  background: rgb(255, 255, 255);
+  padding: 20px 16px;
+  padding-right: 30px;
+  display: none;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.professions_item {
+  border-radius: 15px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.professions_item:hover {
+  transition: all 0.4s ease;
+  background: rgb(255, 239, 239);
+}
+
+.professions_item span {
+  color: rgb(149, 148, 148);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 0;
+  transition: all 0.4s ease;
+}
+
+.professions_item:hover span {
+  transition: all 0.4s ease;
+  font-weight: 600;
+}
+.active_profession {
+  background: rgb(255, 239, 239);
+}
+.active_profession span {
+  font-weight: 600;
+}
+
+.professions_list::-webkit-scrollbar {
+  width: 8px;
+  padding-right: 5px;
+}
+
+.professions_list::-webkit-scrollbar-track {
+  border-radius: 15px;
+  background: rgb(238, 238, 238);
+  margin: 16px 8px 16px 0;
+}
+
+.professions_list::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: rgb(143, 143, 143);
+}
