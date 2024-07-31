@@ -61,3 +61,9 @@ function selectIcon(element) {
     selectedIcon.style.display = "block";
   }
 }
+
+const menu = document.querySelector(".sidebar_mob_opener");
+const mobSidebar = document.querySelector(".edit_page_sidebar");
+menu.addEventListener("click", () => {
+  mobSidebar.classList.toggle("visible_edit_sidebar");
+});

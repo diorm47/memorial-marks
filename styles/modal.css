@@ -44,3 +44,90 @@
   transform: translateY(0);
   opacity: 1;
 }
+
+@media only screen and (max-width: 600px) {
+  .modal_container {
+    width: 92%;
+    padding: 20px;
+  }
+  .exit_modal_btn img {
+    width: 33px;
+    height: 33px;
+  }
+  .exit_modal_btn {
+    right: -10px;
+    top: -15px;
+  }
+  .modal_title h3 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  .socials_icons {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .social_icons_list_block {
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+  .editing_actions_list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .file_renaming input {
+    width: 100%;
+  }
+  .file_renaming {
+    width: 100%;
+  }
+  .save_changes_btn {
+    width: 100%;
+  }
+  .file_renaming input::placeholder {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 234px;
+  }
+  .agreement_modal .modal_title h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+  .file_edit_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .editing_photo img {
+    width: 100%;
+    height: auto;
+  }
+  .upload_desc .save_btn {
+    margin-top: 40px;
+  }
+  .editing_actions_list {
+    margin-top: 20px;
+  }
+  .remove_btn {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .file_edit_block {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal_wrapper {
+    overflow-y: auto;
+   
+    padding: 20px 0;
+  }
+  #photo_edit_modal {
+    height: 100%;
+  }
+}

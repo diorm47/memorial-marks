@@ -13,6 +13,7 @@
     <!-- nav bar -->
     <nav>
       <div class="nav_wrapper container">
+        <div class="empty"></div>
         <div class="nav_left"><h4>Edit Profile</h4></div>
         <div class="nav_right_profile">
           <div class="nav_right_user_data">
@@ -27,6 +28,9 @@
             </div>
           </div>
         </div>
+        <div class="mob_nav_menu" >
+          <img src="./assets/icons/burger.svg" alt="" data-modal-target="#logout_modal" />
+        </div>
       </div>
     </nav>
 
@@ -37,14 +41,15 @@
           <img src="./assets/logo.svg" alt="" />
         </div>
         <button class="change_wall_btn">
-          <img src="./assets/icons/camera.svg" alt="" /> Change wallpaper
+          <img src="./assets/icons/camera.svg" alt="" />
+          <p>Change wallpaper</p>
         </button>
       </div>
     </div>
 
     <!-- main edit block -->
     <div class="edit_wrapper container">
-      <div class="edit_sidebar">
+      <div class="edit_sidebar edit_page_sidebar">
         <div class="user_profile">
           <div class="user_profile_avatar">
             <img
@@ -58,6 +63,9 @@
           </div>
           <div class="user_profile_username">
             <p>John Smith</p>
+          </div>
+          <div class="sidebar_mob_opener">
+            <img src="./assets/icons/open_sidebar.svg" alt="" />
           </div>
         </div>
         <div class="profile_sidebar tabs_list">
@@ -423,7 +431,6 @@
             <div class="page_actions">
               <button class="save_btn">Save</button>
               <button class="edit_btn">Edit</button>
-              <button class="delete_btn">Delete</button>
             </div>
           </div>
         </div>
@@ -1439,6 +1446,19 @@
           <button class="save_btn close_action">Yes</button>
           <button class="edit_btn close_action">No</button>
         </div>
+        <div class="exit_modal_btn">
+          <img src="./assets/icons/exit.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- logout modal -->
+    <div class="modal_wrapper logout_modal_wrapper" id="logout_modal">
+      <div class="modal_container logout_modal">
+        <button class="mobile_logout_btn">
+          <img src="./assets/icons/logout.svg" alt="" />
+          Log out
+        </button>
         <div class="exit_modal_btn">
           <img src="./assets/icons/exit.svg" alt="" />
         </div>
