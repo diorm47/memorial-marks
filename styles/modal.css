@@ -2,6 +2,7 @@
   position: fixed;
   width: 100%;
   height: 100vh;
+
   left: 0;
   top: 0;
   backdrop-filter: blur(2px);
@@ -16,6 +17,7 @@
 .modal_container {
   padding: 66px;
   width: 70%;
+  max-width: 1200px;
   border-radius: 16.67px;
   position: relative;
   box-shadow: 0px 0px 33.33px 0px rgba(0, 0, 0, 0.15);
@@ -35,6 +37,13 @@
   right: -20px;
 }
 
+.exit_modal_btn img {
+  transition: all 0.4s ease;
+}
+.exit_modal_btn img:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.1);
+}
 .visible_modal {
   display: flex;
 }
@@ -45,7 +54,7 @@
   opacity: 1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1100px) {
   .modal_container {
     width: 92%;
     padding: 20px;
@@ -124,10 +133,18 @@
   }
   .modal_wrapper {
     overflow-y: auto;
-   
     padding: 20px 0;
   }
-  #photo_edit_modal {
-    height: 100%;
+  #photo_edit_modal .modal_container,
+  #video_edit_modal .modal_container {
+    height: 95vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #photo_edit_modal .modal_container .exit_modal_btn,
+  #video_edit_modal .modal_container .exit_modal_btn {
+    top: 3px;
+    right: 3px;
   }
 }

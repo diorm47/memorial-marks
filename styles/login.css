@@ -1,5 +1,6 @@
 .login_page {
   padding: 100px 0 125px;
+  min-height: 97vh;
 }
 .login_wrapper {
   max-width: 540px;
@@ -85,6 +86,9 @@
   letter-spacing: 0%;
   text-align: center;
   margin-bottom: 20px;
+}
+.login_links a {
+  color: rgb(149, 148, 148);
 }
 
 .login_input {

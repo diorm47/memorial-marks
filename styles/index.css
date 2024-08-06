@@ -59,7 +59,7 @@ nav {
   background: url(../assets/images/wallpaper-default.png);
   background-size: cover;
   width: 100%;
-  padding: 25px 0 120px;
+  padding: 50px 0;
 }
 .walpapper_wrapper {
   display: flex;
@@ -85,6 +85,12 @@ nav {
   line-height: 16px;
   letter-spacing: 0%;
   text-align: left;
+  position: relative;
+}
+.wallpaper_edit {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
 }
 
 .edit_wrapper {
@@ -94,10 +100,11 @@ nav {
   padding-bottom: 50px;
   margin-top: -40px;
   height: 100%;
+  min-height: 100vh;
 }
 .edit_sidebar {
-  width: 100%;
-  max-width: 400px;
+  width: 33%;
+
   max-height: 784px;
   border-radius: 16.67px;
   padding: 40px 33px 50px;
@@ -200,8 +207,7 @@ nav {
 }
 
 .edit_block_content {
-  width: 100%;
-  max-width: 980px;
+  width: 66%;
 
   padding-top: 70px;
 }
@@ -408,7 +414,7 @@ nav {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  justify-content: space-between;
+  gap: 40px;
 }
 .menu_item_content {
   display: none;
@@ -564,7 +570,13 @@ nav {
   gap: 13px;
   display: none;
 }
-
+.photo_actions_menu_list img {
+  transition: all 0.4s ease;
+}
+.photo_actions_menu_list img:hover {
+  transition: all 0.4s ease;
+  opacity: 0.6;
+}
 .photo_actions_menu:hover .photo_actions_menu_btn {
   display: none;
 }
@@ -683,8 +695,34 @@ nav {
   background: transparent;
 }
 
+.drag_box_block .uploaded-img,
+.drag_box_block .uploaded-video {
+  width: 108px;
+  height: 108px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.filled_dragbox p,
+.filled_dragbox .drag_box_block_img {
+  display: none;
+}
+.filled_dragbox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  justify-content: start;
+  padding: 20px;
+  gap: 0;
+  grid-gap: 10px;
+}
 .upload_content {
   display: none;
+}
+.upload_content .photo_upload_block .drag_box_block {
+  width: auto;
+  height: auto;
+  min-width: 235px;
+  min-height: 220.83px;
 }
 .upload_content.active_handler {
   display: block;
@@ -770,7 +808,7 @@ nav {
 
 .agreement_modal,
 .edit_social_links {
-  max-width: 866.67px;
+  max-width: 866.67px !important;
 }
 .agreement_modal .page_actions {
   justify-content: center;
@@ -945,7 +983,13 @@ nav {
 
 /*  */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
+  .wallpaper_edit {
+    width: 15px;
+    height: 15px;
+    right: -5px;
+    bottom: -5px;
+  }
   .edit_sidebar {
     width: 30%;
   }
@@ -954,6 +998,13 @@ nav {
   }
   .profile_sidebar_item {
     padding-left: 20px;
+  }
+  .file_upload_block {
+    justify-content: start;
+    gap: 60px;
+  }
+  .upload_avatar .upload_status {
+    margin-top: -20px;
   }
   .edit_sidebar {
     padding: 26px 20px;
@@ -1006,9 +1057,9 @@ nav {
   .data_input p {
     font-size: 10.67px;
     font-weight: 400;
-    line-height: 13px;
+    line-height: 20px;
     letter-spacing: 0%;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
   .upload_desc p {
     font-size: 8.53px;
@@ -1084,7 +1135,7 @@ nav {
   }
 
   .mb_25px {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
   .edit_wrapper {
     gap: 30px;
@@ -1166,7 +1217,7 @@ nav {
 .sidebar_mob_opener {
   position: absolute;
   right: -60px;
-  top: -10px;
+  top: -4px;
   display: none;
 }
 .mob_nav_menu,
@@ -1174,7 +1225,19 @@ nav {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  .content_page_title_other {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .edit_page {
+    gap: 20px;
+  }
+  .content_page_title h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
   .change_wall_btn p {
     display: none;
   }
@@ -1187,9 +1250,11 @@ nav {
     height: 11px;
   }
   .wallpaper {
-    height: 130px;
     padding: 0;
-    padding-top: 15px;
+    padding: 17px 0 80px;
+  }
+  .main_wallpaper {
+    padding-bottom: 40px;
   }
   .wallpaper_logo img {
     width: 100px;
@@ -1328,11 +1393,11 @@ nav {
     flex-direction: column;
     align-items: center;
   }
-  .photo_upload_block .drag_box_block,
+  /* .photo_upload_block .drag_box_block,
   .photo_upload_block .drag_box {
     width: 100%;
     height: 176px;
-  }
+  } */
   .photo_video_hanlers button {
     width: 117px;
     height: 36px;
@@ -1352,10 +1417,14 @@ nav {
   }
   .data_input_with_btn {
     flex-direction: column;
+    align-items: start;
   }
   .data_input_with_btn input,
   .data_input_with_btn button {
     width: 100%;
+  }
+  .data_input_with_btn input {
+    max-width: 100%;
   }
   .data_input_with_btn button {
     border-radius: 5px;
@@ -1380,6 +1449,7 @@ nav {
   }
   .added_link_item {
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .mob_nav_menu {
@@ -1424,5 +1494,34 @@ nav {
     letter-spacing: 0%;
     text-align: left;
     text-transform: capitalize;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .filled_dragbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    justify-content: start;
+    padding: 20px;
+    gap: 0;
+    grid-gap: 10px;
+  }
+  .edit_wrapper {
+    min-height: auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .filled_dragbox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .content_page_title h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
   }
 }

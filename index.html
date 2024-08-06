@@ -28,22 +28,39 @@
             </div>
           </div>
         </div>
-        <div class="mob_nav_menu" >
-          <img src="./assets/icons/burger.svg" alt="" data-modal-target="#logout_modal" />
+        <div class="mob_nav_menu">
+          <img
+            src="./assets/icons/burger.svg"
+            alt=""
+            data-modal-target="#logout_modal"
+          />
         </div>
       </div>
     </nav>
 
     <!-- wallpaper -->
-    <div class="wallpaper">
+    <div class="wallpaper main_wallpaper">
       <div class="walpapper_wrapper container">
         <div class="wallpaper_logo">
           <img src="./assets/logo.svg" alt="" />
         </div>
-        <button class="change_wall_btn">
-          <img src="./assets/icons/camera.svg" alt="" />
-          <p>Change wallpaper</p>
-        </button>
+        <div class="wallpaper_right">
+          <button class="change_wall_btn">
+            <img src="./assets/icons/camera.svg" alt="" />
+            <p>Change wallpaper</p>
+            <img
+              class="wallpaper_edit"
+              src="./assets/icons/wallpaper-edit.svg"
+              alt=""
+            />
+          </button>
+          <div class="wallpaper_right_text">
+            <p>
+              We cannot bring back those we have lost, but we can remember them,
+              appreciate them and share their stories with others."
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -60,6 +77,12 @@
             <div class="user_profile_img_update">
               <img src="./assets/icons/update-img-icon.svg" alt="" />
             </div>
+            <input
+              type="file"
+              id="profileImageInput"
+              style="display: none"
+              accept="image/*"
+            />
           </div>
           <div class="user_profile_username">
             <p>John Smith</p>
@@ -799,7 +822,7 @@
                 ></textarea>
               </div>
 
-              <div class="content_page_title">
+              <div class="content_page_title content_page_title_other">
                 <h2>Other:</h2>
               </div>
 
@@ -843,8 +866,12 @@
               <div class="upload_content active_handler" id="photos_upload">
                 <div class="photo_upload_block">
                   <div class="drag_box">
-                    <div class="drag_box_block">
-                      <img src="./assets/icons/drag.svg" alt="" />
+                    <div class="drag_box_block" id="dragBoxBlock">
+                      <img
+                        class="drag_box_block_img"
+                        src="./assets/icons/drag.svg"
+                        alt=""
+                      />
                       <p>
                         Drag the required <br />
                         photo here
@@ -852,13 +879,22 @@
                     </div>
                   </div>
                   <div class="upload_desc">
-                    <button class="upload_btn">Choose photo</button>
+                    <button class="upload_btn" id="uploadBtn">
+                      Choose photo
+                    </button>
                     <p>
                       jpeg/png/gif up to 4Mb in size - only you <br />
                       should be depicted in the photo
                     </p>
                     <button class="save_btn">Upload photos</button>
                   </div>
+                  <input
+                    type="file"
+                    id="fileInput"
+                    style="display: none"
+                    multiple
+                    accept="image/*"
+                  />
                 </div>
                 <div class="upload_gallery">
                   <h3>Photo gallery</h3>
@@ -1007,11 +1043,17 @@
                   </div>
                 </div>
               </div>
+
+              <!-- videos -->
               <div class="upload_content" id="videos_upload">
                 <div class="photo_upload_block">
                   <div class="drag_box">
-                    <div class="drag_box_block">
-                      <img src="./assets/icons/drag.svg" alt="" />
+                    <div class="drag_box_block" id="dragBoxVideoBlock">
+                      <img
+                        class="drag_box_block_img"
+                        src="./assets/icons/drag.svg"
+                        alt=""
+                      />
                       <p>
                         Drag the required <br />
                         video here
@@ -1019,13 +1061,22 @@
                     </div>
                   </div>
                   <div class="upload_desc">
-                    <button class="upload_btn">Choose Video</button>
+                    <button class="upload_btn" id="uploadVideoBtn">
+                      Choose Video
+                    </button>
                     <p>
                       mp4/avi up to 1000Mb in size - only you <br />
                       should be depicted in the video
                     </p>
                     <button class="save_btn">Upload videos</button>
                   </div>
+                  <input
+                    type="file"
+                    id="fileVideoInput"
+                    style="display: none"
+                    multiple
+                    accept="video/*"
+                  />
                 </div>
                 <div class="upload_gallery">
                   <h3>Video gallery</h3>
@@ -1468,22 +1519,13 @@
     <!-- footer -->
     <footer>
       <div class="footer_wrapper container">
-        <div class="footer_logo">
-          <img src="./assets/logo.svg" alt="" />
-        </div>
         <div class="footer_menu">
-          <div>
-            <a href="#"><p>Privacy Policy</p></a>
-            <a href="#"><p>Shipping Policy</p></a>
-          </div>
-          <div>
-            <a href="#"><p>User agreement</p></a>
-            <a href="#"><p>Contact information</p></a>
-          </div>
-          <div>
-            <a href="#"><p>Return and exchange policy</p></a>
-            <a href="#"><p>Information about goods and services</p></a>
-          </div>
+          <a href="#"><p>Privacy Policy</p></a>
+          <a href="#"><p>Shipping Policy</p></a>
+          <a href="#"><p>User agreement</p></a>
+          <a href="#"><p>Contact information</p></a>
+          <a href="#"><p>Return and exchange policy</p></a>
+          <a href="#"><p>Information about goods and services</p></a>
         </div>
       </div>
     </footer>
@@ -1494,5 +1536,7 @@
     <script src="./scripts/tabs-upload.js"></script>
     <script src="./scripts/upload-img.js"></script>
     <script src="./scripts/calendar.js"></script>
+    <script src="./scripts/photos-upload.js"></script>
+    <script src="./scripts/videos-upload.js"></script>
   </body>
 </html>

@@ -22,28 +22,31 @@ tabs.onclick = (e) => {
   }
 };
 
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.querySelector(".professions_list_input input");
+  const professionsList = document.querySelector(".professions_list");
+  const professionItems = document.querySelectorAll(".professions_item");
 
-document.addEventListener('DOMContentLoaded', function () {
-  const input = document.querySelector('.professions_list_input input');
-  const professionsList = document.querySelector('.professions_list');
-  const professionItems = document.querySelectorAll('.professions_item');
+  if (input) {
+    input.addEventListener("click", function () {
+      professionsList.style.display =
+        professionsList.style.display === "block" ? "none" : "block";
+    });
+  }
 
-  input.addEventListener('click', function () {
-    professionsList.style.display = professionsList.style.display === 'block' ? 'none' : 'block';
-  });
-
-  professionItems.forEach(item => {
-    item.addEventListener('click', function () {
+  professionItems.forEach((item) => {
+    item.addEventListener("click", function () {
       input.value = this.textContent.trim();
-      professionsList.style.display = 'none';
-      professionItems.forEach(i => i.classList.remove('active_profession'));
-      this.classList.add('active_profession');
+      professionsList.style.display = "none";
+      professionItems.forEach((i) => i.classList.remove("active_profession"));
+      this.classList.add("active_profession");
     });
   });
-
-  document.addEventListener('click', function (e) {
-    if (!e.target.closest('.data_input')) {
-      professionsList.style.display = 'none';
-    }
-  });
+  if (professionsList) {
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".data_input")) {
+        professionsList.style.display = "none";
+      }
+    });
+  }
 });

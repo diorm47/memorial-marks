@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 
 * {
   margin: 0;
@@ -29,7 +30,7 @@ button:hover {
 }
 
 .container {
-  width: 1400px;
+  width: 1720px;
   margin: 0 auto;
   position: relative;
 }
@@ -58,38 +59,69 @@ button:hover {
 /* footer */
 footer {
   background: rgb(37, 37, 37);
-  padding: 33px 0;
+  padding: 10px 0;
 }
 
-.footer_wrapper,
+.footer_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .footer_menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.footer_logo img {
-  width: 236.67px;
-}
-
-.footer_menu {
-  gap: 100px;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 .footer_menu p {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
-  font-size: 13.33px;
+  font-size: 10px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 12px;
   letter-spacing: 0%;
   text-align: left;
+  transition: all 0.4s ease;
+}
+.footer_menu p:hover {
+  transition: all 0.4s ease;
+  text-decoration: underline;
 }
 
 .footer_menu div a:nth-child(1) p {
   margin-bottom: 12px;
 }
 
-@media only screen and (max-width: 1500px) {
+.text_hover:hover {
+  text-decoration: underline;
+}
+
+.icon_hover {
+  transition: all 0.4s ease;
+}
+.icon_hover:hover {
+  transition: all 0.4s ease;
+  opacity: 0.6;
+}
+.wallpaper_right_text p {
+  max-width: 609px;
+  color: rgb(255, 255, 255);
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.wallpaper_right {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 20px;
+}
+@media only screen and (max-width: 1800px) {
   .container {
     width: 100%;
     padding-left: 50px;
@@ -98,11 +130,18 @@ footer {
 }
 
 @media only screen and (max-width: 1200px) {
-  .footer_logo img {
-    width: 151.47px;
+  .wallpaper_logo img {
+    width: 170px;
   }
+  .wallpaper_right_text p {
+    max-width: 500px;
+
+    font-size: 20px;
+  }
+
+
   .footer_menu {
-    gap: 70px;
+    gap: 10px;
   }
 
   .load_more_btn button {
@@ -123,7 +162,18 @@ footer {
   .footer_menu {
     flex-wrap: wrap;
     justify-content: start;
-    gap: 30px;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .wallpaper_logo img {
+    width: 120px;
+  }
+  .wallpaper_right_text p {
+    max-width: 166px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
   }
 }
 
@@ -132,4 +182,5 @@ footer {
     padding-left: 15px;
     padding-right: 15px;
   }
+
 }

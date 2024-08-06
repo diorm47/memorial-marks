@@ -59,3 +59,38 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 });
+
+document
+  .querySelector(".user_profile_img_update")
+  .addEventListener("click", function () {
+    document.getElementById("profileImageInput").click();
+  });
+
+document
+  .getElementById("profileImageInput")
+  .addEventListener("change", function (event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        document.querySelector(".user_avatar_img").src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+
+      // Отправка изображения на сервер
+      const formData = new FormData();
+      formData.append("profileImage", file);
+
+      fetch("/upload-profile-image", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Success:", data);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    }
+  });

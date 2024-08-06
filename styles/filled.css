@@ -7,6 +7,8 @@
   letter-spacing: 0%;
   text-align: center;
   padding-top: 8px;
+  display: flex;
+  width: 100%;
 }
 
 .user_date_birth p {
@@ -50,10 +52,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.obituary_btn_block div:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.1);
 }
 
 .filled_profile_sidebar {
-  max-width: 400px;
+  width: 30%;
+}
+.filled_profile_sidebar .edit_sidebar {
   width: 100%;
 }
 .filled_profile_sidebar .user_profile {
@@ -230,14 +240,26 @@
   align-items: center;
   justify-content: center;
 }
+.play_icon img {
+  transition: all 0.4s ease;
+}
+.play_icon img:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.1);
+}
 .social_networks_list {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.social_networks_list a {
+  width: 30%;
 }
 .social_networks_list div {
   border-radius: 8.33px;
-  width: 284.17px;
+  width: 100%;
   height: 58.33px;
   display: flex;
   align-items: center;
@@ -277,9 +299,12 @@
   flex-direction: column;
   align-items: center;
 }
+.carousel_main_image {
+  width: 80%;
+}
 
 .carousel_main_image img {
-  width: 805px;
+  width: 100%;
   height: 510px;
   object-fit: cover;
   border-radius: 16.67px;
@@ -300,13 +325,14 @@
 }
 
 .carousel_thumbnails {
+  width: 80%;
   display: flex;
   justify-content: center;
   margin-top: 16px;
 }
 
 .carousel_thumbnails img {
-  width: 264.17px;
+  width: 33%;
   height: 107.5px;
   border-radius: 12.5px;
   object-fit: cover;
@@ -332,6 +358,15 @@
 .carousel_container {
   padding: 30px !important;
 }
+@media only screen and (max-width: 1400px) {
+  .carousel_controls {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .carousel_thumbnails {
+    width: 100%;
+  }
+}
 
 @media only screen and (max-width: 1200px) {
   .filled_profile_sidebar {
@@ -341,11 +376,37 @@
   .filled_profile_sidebar .edit_sidebar {
     width: 100%;
   }
+  .social_networks_list {
+    justify-content: start;
+  }
+  .social_networks_list a {
+    width: auto;
+  }
+  .social_networks_list div {
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .filled_menu_item {
+    justify-content: start;
+  }
+  .gallery_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .obituary_btn_block {
+    flex-direction: column;
+  }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
+  .obituary_btn_block {
+    flex-direction: row;
+  }
   .filled_page {
     flex-direction: column;
+    padding-bottom: 30px;
   }
   .filled_profile_sidebar {
     width: 100%;
@@ -372,7 +433,7 @@
   }
 
   .data_block h4 {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 17px;
   }
@@ -389,7 +450,7 @@
     margin-bottom: 15px;
   }
   .data_block span {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 24px;
   }
@@ -510,5 +571,17 @@
   }
   .filled_menu_item p span {
     display: none;
+  }
+  .carousel_controls {
+    gap: 20px;
+  }
+
+  .carousel_controls button {
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background: rgb(255, 184, 184);
+    justify-content: center;
   }
 }
