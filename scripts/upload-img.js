@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function handleFile(event) {
     const file = event.target.files[0];
-    if (file && file.size <= 4 * 1024 * 1024) {
+    if (file ) {
       const reader = new FileReader();
       reader.onload = (e) => {
         currentPhoto.src = e.target.result;

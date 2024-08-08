@@ -29,6 +29,7 @@
 .modal_container .video_player {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 .exit_modal_btn {
   cursor: pointer;
@@ -140,11 +141,13 @@
     height: 95vh;
     overflow-y: auto;
     overflow-x: hidden;
+    border-top-right-radius: 7px;
   }
 
   #photo_edit_modal .modal_container .exit_modal_btn,
   #video_edit_modal .modal_container .exit_modal_btn {
-    top: 3px;
-    right: 3px;
+    top: 0px;
+    right: 0px;
   }
+
 }

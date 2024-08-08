@@ -7,7 +7,7 @@ uploadBtn.addEventListener("click", function () {
 });
 
 fileInput.addEventListener("change", function (event) {
-  handleFiles(event.target.files);
+  handlePhotoFiles(event.target.files);
 });
 
 dragBoxBlock.addEventListener("dragover", function (event) {
@@ -22,24 +22,20 @@ dragBoxBlock.addEventListener("dragleave", function () {
 dragBoxBlock.addEventListener("drop", function (event) {
   event.preventDefault();
   dragBoxBlock.style.border = "none"; // Reset styling
-  handleFiles(event.dataTransfer.files);
+  handlePhotoFiles(event.dataTransfer.files);
 });
 
-function handleFiles(files) {
+function handlePhotoFiles(files) {
   const acceptedFileTypes = ["image/jpeg", "image/png", "image/gif"];
   Array.from(files).forEach((file) => {
-    if (acceptedFileTypes.includes(file.type) && file.size <= 4 * 1024 * 1024) {
-      const reader = new FileReader();
-      reader.onload = function (e) {
-        const img = document.createElement("img");
-        img.src = e.target.result;
-        img.classList.add("uploaded-img");
-        dragBoxBlock.appendChild(img);
-        dragBoxBlock.classList.add('filled_dragbox')
-      };
-      reader.readAsDataURL(file);
-    } else {
-      alert("File type not supported or file size is too large.");
-    }
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      const img = document.createElement("img");
+      img.src = e.target.result;
+      img.classList.add("uploaded-img");
+      dragBoxBlock.appendChild(img);
+      dragBoxBlock.classList.add("filled_dragbox");
+    };
+    reader.readAsDataURL(file);
   });
 }
