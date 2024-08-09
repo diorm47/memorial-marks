@@ -1,6 +1,7 @@
 const tabs = document.querySelector(".tabs_list");
 const tabButton = document.querySelectorAll(".menu_item");
 const contents = document.querySelectorAll(".menu_item_content");
+const mobSidebarBlock = document.querySelector(".edit_page_sidebar");
 
 if (tabs) {
   tabs.onclick = (e) => {
@@ -14,6 +15,9 @@ if (tabs) {
         btn.classList.remove("active_menu");
       });
       target.classList.add("active_menu");
+      if (mobSidebarBlock) {
+        mobSidebarBlock.classList.remove("visible_edit_sidebar");
+      }
 
       contents.forEach((content) => {
         content.classList.remove("active_menu");
