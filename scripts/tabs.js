@@ -55,3 +55,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// load more
+document.querySelectorAll(".load_more_component").forEach((component) => {
+  const loadMoreWrapper = component.querySelector(".load_more_wrapper");
+  const loadMoreButton = component.querySelector(".loadMoreButton");
+
+  loadMoreButton.addEventListener("click", () => {
+    if (
+      loadMoreWrapper.style.display === "none" ||
+      loadMoreWrapper.style.display === ""
+    ) {
+      loadMoreWrapper.style.display = "block"; 
+      loadMoreButton.textContent = "Show less"; 
+    } else {
+      loadMoreWrapper.style.display = "none"; 
+      loadMoreButton.textContent = "Load more"; 
+    }
+  });
+});
